@@ -6,7 +6,7 @@ export const Tours: React.FC = () =>
 {
     return (
         <Box>
-            <Typography variant="h1">Tours Page</Typography>
+            <Typography variant="h1" color="textPrimary">Tours Page</Typography>
         </Box>
     );
 }

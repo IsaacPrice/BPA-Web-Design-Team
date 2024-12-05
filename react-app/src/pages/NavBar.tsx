@@ -14,7 +14,7 @@ export const NavBar: React.FC =() =>
                 {/* TODO: Add small logo here */}
             </Button>
 
-            <ButtonGroup variant='text' color="secondary">
+            <ButtonGroup variant="text" color="inherit">
                 <Button onClick={() => navigate('/about')}>About</Button>
                 <Button onClick={() => navigate('/tours')}>Tours</Button>
                 <Button onClick={() => navigate('/merch')}>Merch</Button>
