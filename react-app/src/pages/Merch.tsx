@@ -6,7 +6,7 @@ export const Merch: React.FC = () =>
 {
     return (
         <Box>
-            <Typography variant="h1">Merch Page</Typography>
+            <Typography variant="h1" color="textPrimary">Merch Page</Typography>
         </Box>
     );
 }
