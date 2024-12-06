@@ -21,12 +21,24 @@ export const theme = createTheme(
         },
     },
     typography: {
-        fontFamily: 'Century Gothic, Weezer, sans-serif',
+        fontFamily: 'Century Gothic, sans-serif',
         h1: {
             fontSize: '3rem'
         },
-        body1: {
-            paddingBottom: '15px'
+        h2: {
+            fontSize: '2.5rem'
+        },
+        h3: {
+            fontSize: '2rem'
+        },
+        h4: {
+            fontSize: '1.66rem'
+        },
+        h5: {
+            fontSize: '1.33rem'
+        },
+        h6: {
+            fontSize: '1rem'
         }
     },
     components: {

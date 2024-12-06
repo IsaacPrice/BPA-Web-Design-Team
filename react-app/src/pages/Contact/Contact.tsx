@@ -78,9 +78,9 @@ export const Contact: React.FC = () =>
 				</TabPanel>
 
 				<TabPanel value={tab} index={ContactTab.CustomerService}>
-					<Typography variant="body1" sx={{ maxWidth: '500px' }}>If you are having any problems with the website, ticket or merch perchasing, or anything else, feel free to reach out to use at</Typography>
+					<Typography variant="body1" sx={{ maxWidth: '500px', marginBottom: '15px' }}>If you are having any problems with the website, ticket or merch perchasing, or anything else, feel free to reach out to use at</Typography>
 					<Typography variant="body1" color="textPrimary">support@stagefrightband.com</Typography>
-					<Typography variant="body1" sx={{ maxWidth: '500px' }}>We will get back to you within at least 2 business days.</Typography>
+					<Typography variant="body1" sx={{ maxWidth: '500px', marginTop: '15px' }}>We will get back to you within at least 2 business days.</Typography>
 				</TabPanel>
 			</Grid>
 		</Grid>
