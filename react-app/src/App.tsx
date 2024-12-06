@@ -5,9 +5,10 @@ import { Home } from './pages/Home';
 import { NavBar } from './pages/NavBar';
 import { theme } from './theme/theme';
 import { Tours } from './pages/Tours';
-import { Merch } from './pages/Merch';
+import { MerchPage } from './pages/Merch/Merch';
 import { Contact } from './pages/Contact/Contact';
 import { About } from './pages/About';
+import { MerchItemPage } from './pages/Merch/MerchItem';
 
 
 function App() 
@@ -20,7 +21,8 @@ function App()
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="/merch" element={<Merch />} />
+					<Route path="/merch" element={<MerchPage />} />
+					<Route path="/merch/:merchName" element={<MerchItemPage />} />
 					<Route path="/tours" element={<Tours />} />
 				</Routes>
 			</BrowserRouter>
