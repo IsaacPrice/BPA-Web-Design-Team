@@ -9,7 +9,7 @@ export const NavBar: React.FC =() =>
 
 
     return (
-        <AppBar position="static" sx={{ display: 'flex', justifyContent: 'space-between', gap: '25px', flexDirection: 'row', padding: '5px' }}>
+        <AppBar position="static" sx={{ display: 'flex', justifyContent: 'space-between', gap: '25px', flexDirection: 'row', padding: '5px', marginBottom: '15px' }}>
             <Button onClick={() => navigate('/')} sx={{ minWidth: '75px', minHeight: '50px', border: '1px solid white' }}>
                 {/* TODO: Add small logo here */}
             </Button>

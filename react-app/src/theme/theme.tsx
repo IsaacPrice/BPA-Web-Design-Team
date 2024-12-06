@@ -17,13 +17,16 @@ export const theme = createTheme(
         },
         text: {
             primary: '#36393b',
-            secondary: '#757575',
+            secondary: '#bfb6bb',
         },
     },
     typography: {
         fontFamily: 'Century Gothic, Weezer, sans-serif',
         h1: {
-            fontSize: '4rem'
+            fontSize: '3rem'
+        },
+        body1: {
+            paddingBottom: '15px'
         }
     },
     components: {
@@ -37,10 +40,12 @@ export const theme = createTheme(
         MuiButton: {
             styleOverrides: {
                 root: {
-                    color: '#36393b',
                     fontFamily: 'Century Gothic, sans-serif',
                     fontWeight: 700
                 }
+            },
+            defaultProps: {
+                variant: "contained",
             }
         },
         MuiTypography: {
@@ -49,6 +54,11 @@ export const theme = createTheme(
                     textAlign: 'center',
                 }
             }
-        }
+        },
+        MuiTextField: {
+            defaultProps: {
+                fullWidth: true,
+            },
+        },
     },
 });

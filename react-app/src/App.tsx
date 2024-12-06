@@ -6,7 +6,7 @@ import { NavBar } from './pages/NavBar';
 import { theme } from './theme/theme';
 import { Tours } from './pages/Tours';
 import { Merch } from './pages/Merch';
-import { Contact } from './pages/Contact';
+import { Contact } from './pages/Contact/Contact';
 import { About } from './pages/About';
 
 

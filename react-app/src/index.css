@@ -1,16 +1,23 @@
 @font-face {
-  font-family: 'Weezer';
-  src: local('Weezer'), url(../public/fonts/weezerfont.ttf) format('truetype');
+ 	font-family: 'Weezer';
+ 	src: local('Weezer'), url(../public/fonts/weezerfont.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Century Gothic';
-  src: local('Century Gothic'), url(../public/fonts/centurygothic.ttf) format('truetype');
+  	font-family: 'Century Gothic';
+  	src: local('Century Gothic'), url(../public/fonts/centurygothic.ttf) format('truetype');
 }
 
 body {
-  margin: 0;
-  font-family: 'Weezer', 'Century Gothic', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Weezer', 'Century Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.centerAligned {
+  	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 }
