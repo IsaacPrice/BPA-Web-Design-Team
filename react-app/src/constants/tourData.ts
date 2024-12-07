@@ -1,7 +1,7 @@
 import { Tour } from "../types/Tour";
 
 
-export const TourData: Tour[] = 
+export const TOUR_DATA: Tour[] = 
 [
     { 
         name: 'Lucas Oil Stadium',
