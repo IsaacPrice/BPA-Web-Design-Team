@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Button, ButtonGroup, Link, Typography } from "@mui/material";
+import { AppBar, Button, ButtonGroup, Link } from "@mui/material";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
 
