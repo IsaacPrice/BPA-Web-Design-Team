@@ -22,7 +22,7 @@ export const Tours: React.FC = () =>
             </Grid>
 
             {
-                TOUR_DATA.map((tour: Tour) =>
+                TOUR_DATA.map((tour: Tour) => (
                     <Grid size={{ xs: 12, md: 6, lg: 3 }}>
                         <Paper sx={{ padding: '15px' }}>
                             <Box 
@@ -37,7 +37,7 @@ export const Tours: React.FC = () =>
                             <Typography variant="h5" fontWeight="700">$ {tour.ticketPrice}</Typography>
                         </Paper>
                     </Grid>
-                )
+                ))
             }
         </Grid>
     );

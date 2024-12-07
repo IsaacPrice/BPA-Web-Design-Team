@@ -19,3 +19,14 @@ The footer is yet to be made, it probably just going to have our names, bpa numb
 Update the photos of us, in the bandMember data to be the transparent background ones
 
 Change the about us carousel to be automatic when hovering over it.
+
+Crop the StageFright images so that there is no excess transparent stuff
+
+Update the github repository to include the better documentation, and instructions to build and use on their own
+
+the home page has a button 'listen now', but it doesn't do anything. Figure out if we make a page with more links,
+    leave as is, or make some sort of indication that it should redirect them
+
+Change the title and icon
+
+Replace anything with a href to a onclick => navigate

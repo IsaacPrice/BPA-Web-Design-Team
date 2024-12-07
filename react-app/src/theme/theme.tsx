@@ -65,6 +65,9 @@ export const theme = createTheme(
                 root: {
                     textAlign: 'center',
                 }
+            },
+            defaultProps: {
+                color: "textPrimary",
             }
         },
         MuiTextField: {

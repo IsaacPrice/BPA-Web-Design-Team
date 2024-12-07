@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Link, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { BandMember } from "../types/BandMember";
 import { BAND_MEMBER_DATA } from "../constants/bandMemberData";

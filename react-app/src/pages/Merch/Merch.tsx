@@ -16,38 +16,32 @@ export const MerchPage: React.FC = () =>
 
             {
                 MERCH_DATA.map((merch: Merch) =>
-                {
-                    return (
-                        <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
-                            <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
-                                <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
+                    <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
+                        <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
+                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
-                                <Typography variant="h4"><Link href={`/merch/${merch.linkName}`}>{merch.name}</Link></Typography>
+                            <Typography variant="h4"><Link href={`/merch/${merch.linkName}`}>{merch.name}</Link></Typography>
 
-                                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                                    <Typography color="textSecondary">{merch.category}</Typography>
-                                    <Typography variant="h5" fontWeight={700}>$ {merch.price}</Typography>
+                            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                                <Typography color="textSecondary">{merch.category}</Typography>
+                                <Typography variant="h5" fontWeight={700}>$ {merch.price}</Typography>
+                            </Box>
+
+                            {
+                                (merch.sizes && merch.sizeAbbreviations) &&
+                                <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+                                    {
+                                        merch.sizeAbbreviations.map((size: string) =>
+                                            <Paper sx={{ padding: '5px' }}>
+                                                <Typography>{size.toUpperCase()}</Typography>
+                                            </Paper>   
+                                        )
+                                    }
                                 </Box>
-
-                                {
-                                    (merch.sizes && merch.sizeAbbreviations) &&
-                                    <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-                                        {
-                                            merch.sizeAbbreviations.map((size: string) =>
-                                            {
-                                                return (
-                                                    <Paper sx={{ padding: '5px' }}>
-                                                        <Typography>{size.toUpperCase()}</Typography>
-                                                    </Paper>   
-                                                )
-                                            })
-                                        }
-                                    </Box>
-                                }
-                            </Paper>
-                        </Grid>
-                    )
-                })
+                            }
+                        </Paper>
+                    </Grid>
+                )
             }
         </Grid>
     );
