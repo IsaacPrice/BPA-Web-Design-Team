@@ -18,7 +18,7 @@ export const NavBar: React.FC =() =>
             padding: '5px', 
             marginBottom: '15px' }}>
 
-            <Link href="/" color="textPrimary" sx={{ fontWeight: '700', fontSize: "1.5rem", textDecoration: 'none' }}>Stage Fright</Link>
+            <Link onClick={() => navigate('/')} color="textPrimary" sx={{ fontWeight: '700', fontSize: "1.5rem", textDecoration: 'none' }}>Stage Fright</Link>
 
             <ButtonGroup variant="text" color="inherit">
                 <Button onClick={() => navigate('/about')}>About</Button>

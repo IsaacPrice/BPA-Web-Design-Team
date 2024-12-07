@@ -5,6 +5,7 @@ import { BandMember } from "../types/BandMember";
 import { BAND_MEMBER_DATA } from "../constants/bandMemberData";
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 import { Carousel } from "../components/Carousel";
+import { IMAGE_PATH } from "../constants/imagePath";
 
 
 export const About: React.FC = () => 
@@ -13,9 +14,9 @@ export const About: React.FC = () =>
     {
         if (imagePath.includes('1'))
         {
-            return "/images/" + imagePath + "_large.png";
+            return IMAGE_PATH + imagePath + "_large.png";
         }
-        return "/images/" + imagePath + "_large.jpg";
+        return IMAGE_PATH + imagePath + "_large.jpg";
     }
 
 

@@ -16,7 +16,7 @@ function App()
 {
 	return (
 		<ThemeProvider theme={theme}>
-			<BrowserRouter>
+			<BrowserRouter basename='BPA-Web-Design-Team'>
 				<NavBar />
 				<Routes>
 					<Route path="/" element={<Home />} />
