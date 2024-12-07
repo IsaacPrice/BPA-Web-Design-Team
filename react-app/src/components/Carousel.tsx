@@ -8,6 +8,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 type CarouselProps =
 {
     children?: React.ReactNode[];
+    [key: string]: any;
 }
 
 
@@ -28,25 +29,33 @@ export const Carousel: React.FC<CarouselProps> = (props: CarouselProps) =>
 
 
     return (
-        <Box>
+        <Box {...props}>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                 <IconButton onClick={onScrollLeft}><ChevronLeftIcon /></IconButton>
 
-                <Box sx={{ 
-                    display: 'flex', 
-                    transition: 'transform 0.2s ease-in-out', 
-                    transform: `translateX(-${index * 100}%)`
-                    }}>
-                    {props.children && props.children.map((child, idx) => (
-                        <Box key={idx} sx={{ 
-                            minWidth: '100%', 
-                            boxSizing: 'border-box', 
-                            opacity: index === idx ? 1 : 0 ,
-                            transition: 'opacity .2s ease-in-out'
-                            }}>
-                            {child}
-                        </Box>
-                    ))}
+                <Box sx={{
+                    display: 'flex',
+                    overflow: 'hidden',
+                    width: '100%',
+                    position: 'relative'
+                }}>
+                    <Box sx={{ 
+                        display: 'flex', 
+                        transition: 'transform 0.2s ease-in-out', 
+                        transform: `translateX(-${index * 100}%)`
+                        }}>
+                        {
+                            props.children && props.children.map((child, idx) => (
+                            <Box key={idx} sx={{ 
+                                minWidth: '100%', 
+                                boxSizing: 'border-box', 
+                                opacity: index === idx ? 1 : 0 ,
+                                transition: 'opacity .2s ease-in-out'
+                                }}>
+                                {child}
+                            </Box>
+                        ))}
+                    </Box>
                 </Box>
 
                 <IconButton onClick={onScrollRight}><ChevronRightIcon /></IconButton>

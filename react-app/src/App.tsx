@@ -4,11 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home';
 import { NavBar } from './pages/NavBar';
 import { theme } from './theme/theme';
-import { Tours } from './pages/Tours';
+import { Tours } from './pages/Tour/Tours';
 import { MerchPage } from './pages/Merch/Merch';
 import { Contact } from './pages/Contact/Contact';
 import { About } from './pages/About';
 import { MerchItemPage } from './pages/Merch/MerchItem';
+import { TourDetails } from './pages/Tour/TourDetails';
 
 
 function App() 
@@ -24,6 +25,7 @@ function App()
 					<Route path="/merch" element={<MerchPage />} />
 					<Route path="/merch/:merchName" element={<MerchItemPage />} />
 					<Route path="/tours" element={<Tours />} />
+					<Route path="/tours/:tourName" element={<TourDetails />} />
 				</Routes>
 			</BrowserRouter>
 		</ThemeProvider>
