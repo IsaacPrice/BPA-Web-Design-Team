@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://IsaacPrice.github.io/Bpa-Web-Design-Team",
+  "homepage": "https://isaacprice.github.io/Bpa-Web-Design-Team",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",

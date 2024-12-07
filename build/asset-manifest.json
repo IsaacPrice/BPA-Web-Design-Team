@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bpa-web-design-team/static/css/main.1a58197f.css",
-    "main.js": "/bpa-web-design-team/static/js/main.47ee8f2b.js",
-    "static/js/453.2a82e7ac.chunk.js": "/bpa-web-design-team/static/js/453.2a82e7ac.chunk.js",
-    "static/media/centurygothic.ttf": "/bpa-web-design-team/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
-    "index.html": "/bpa-web-design-team/index.html",
-    "main.1a58197f.css.map": "/bpa-web-design-team/static/css/main.1a58197f.css.map",
-    "main.47ee8f2b.js.map": "/bpa-web-design-team/static/js/main.47ee8f2b.js.map",
-    "453.2a82e7ac.chunk.js.map": "/bpa-web-design-team/static/js/453.2a82e7ac.chunk.js.map"
+    "main.css": "/Bpa-Web-Design-Team/static/css/main.f3feb69c.css",
+    "main.js": "/Bpa-Web-Design-Team/static/js/main.96dc8281.js",
+    "static/js/453.2a82e7ac.chunk.js": "/Bpa-Web-Design-Team/static/js/453.2a82e7ac.chunk.js",
+    "static/media/centurygothic.ttf": "/Bpa-Web-Design-Team/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
+    "index.html": "/Bpa-Web-Design-Team/index.html",
+    "main.f3feb69c.css.map": "/Bpa-Web-Design-Team/static/css/main.f3feb69c.css.map",
+    "main.96dc8281.js.map": "/Bpa-Web-Design-Team/static/js/main.96dc8281.js.map",
+    "453.2a82e7ac.chunk.js.map": "/Bpa-Web-Design-Team/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a58197f.css",
-    "static/js/main.47ee8f2b.js"
+    "static/css/main.f3feb69c.css",
+    "static/js/main.96dc8281.js"
   ]
 }
