@@ -1,5 +1,6 @@
 export type Merch = 
 {
+    productId: string;
     name: string;
     linkName: string;
     category: string;

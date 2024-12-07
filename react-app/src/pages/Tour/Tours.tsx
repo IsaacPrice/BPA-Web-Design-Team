@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid2";
 import { TOUR_DATA } from "../../constants/tourData";
 import { Tour } from "../../types/Tour";
 import { IMAGE_PATH } from "../../constants/imagePath";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 
 /*
 Indianapolis, Indiana, Lucas Oil Stadium, March 31th, 2025 - ADDED
@@ -15,6 +16,9 @@ Evansville, Indiana, Ford Center, April 28th, 2025
 
 export const Tours: React.FC = () => 
 {
+    const navigate: NavigateFunction = useNavigate();
+
+
     return (
         <Grid container spacing={3}>
             <Grid size={12}>
@@ -31,7 +35,7 @@ export const Tours: React.FC = () =>
                                 alt={tour.name} 
                                 sx={{ width: '100%', borderRadius: '3px' }} />
 
-                            <Typography variant="h4"><Link href={`/tours/${tour.linkName}`}>{tour.name}</Link></Typography>
+                            <Typography variant="h4"><Link onClick={() => navigate(`/tours/${tour.linkName}`)}>{tour.name}</Link></Typography>
                             <Typography variant="h5">{tour.location}</Typography>
                             <Typography variant="h5">{tour.date.toLocaleDateString()}</Typography>
                             <Typography variant="h5" fontWeight="700">$ {tour.ticketPrice}</Typography>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Grid from '@mui/material/Grid2';
-import { useParams } from "react-router-dom";
+import { NavigateFunction, useNavigate, useParams } from "react-router-dom";
 import { Merch } from "../../types/Merch";
 import { MERCH_DATA } from "../../constants/merchData";
 import { Box, Paper, Typography, Link, Button, Drawer, IconButton, Dialog } from "@mui/material";
@@ -10,6 +10,7 @@ import { Shipping } from "../../types/Shipping";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import { IMAGE_PATH } from "../../constants/imagePath";
+import PayPalCheckout from "../../components/PayPalCheckout";
 
 
 export const MerchItemPage: React.FC = () => 
@@ -18,7 +19,9 @@ export const MerchItemPage: React.FC = () =>
     const [isShippingOpen, setIsShippingOpen] = useState<boolean>(false);
     const [isReturnPolicyOpen, setIsReturnPolicyOpen] = useState<boolean>(false);
     const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+
     const { merchName } = useParams();
+    const navigate: NavigateFunction = useNavigate();
 
 
     useEffect(() =>
@@ -129,7 +132,7 @@ export const MerchItemPage: React.FC = () =>
 
                     <Box className="centerAlignedRow" marginBottom="25px">
                         <Typography variant="h4" fontWeight={700}>$ {merchItem!.price}</Typography>
-                        <Button>Buy Now</Button>
+                        <PayPalCheckout productId={merchItem!.productId} price={merchItem!.price} />  
                     </Box>
                 </Grid>
 
@@ -147,7 +150,7 @@ export const MerchItemPage: React.FC = () =>
                                     <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
                                         <Box component="img" src={merch.imagePaths[0]} alt={merch.name} width="100%" />
 
-                                        <Typography variant="h4"><Link href={`/merch/${merch.linkName}`}>{merch.name}</Link></Typography>
+                                        <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
                                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                                             <Typography color="textSecondary">{merch.category}</Typography>

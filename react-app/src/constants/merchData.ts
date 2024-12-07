@@ -4,6 +4,7 @@ import { Merch } from "../types/Merch";
 export const MERCH_DATA: Merch[] =
 [
     {
+        productId: '1',
         name: "Blue Stage Fright T-shirt",
         linkName: 'blue-stage-fright-tshirt',
         category: "T-shirt",
@@ -14,6 +15,7 @@ export const MERCH_DATA: Merch[] =
         description: "Show your love for Stage Fright in style! This comfortable, high-quality blue T-shirt features the band’s bold logo front and center. Perfect for concerts, casual outings, or just lounging.",
     },
     {
+        productId: '2',
         name: "Red Stage Fright Hoodie",
         linkName: 'red-stage-fright-hoodie',
         category: "Hoodie",
@@ -24,6 +26,7 @@ export const MERCH_DATA: Merch[] =
         description: "Stay cozy and cool with the Stage Fright red hoodie. This premium pullover showcases the band’s iconic design on soft, warm fabric—ideal for colder days or late-night gigs. Comes in sizes Small to XX-Large for the perfect fit.",
     },
     {
+        productId: '3',
         name: "Black Stage Fright Cap",
         linkName: 'black-stage-fright-cap',
         category: "Cap",
