@@ -75,5 +75,12 @@ export const theme = createTheme(
                 fullWidth: true,
             },
         },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    cursor: 'pointer'
+                }
+            }
+        }
     },
 });

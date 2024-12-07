@@ -10,6 +10,7 @@ import { Contact } from './pages/Contact/Contact';
 import { About } from './pages/About';
 import { MerchItemPage } from './pages/Merch/MerchItem';
 import { TourDetails } from './pages/Tour/TourDetails';
+import { Footer } from './pages/Footer';
 
 
 function App() 
@@ -18,15 +19,17 @@ function App()
 		<ThemeProvider theme={theme}>
 			<BrowserRouter basename='BPA-Web-Design-Team'>
 				<NavBar />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/merch" element={<MerchPage />} />
-					<Route path="/merch/:merchName" element={<MerchItemPage />} />
-					<Route path="/tours" element={<Tours />} />
-					<Route path="/tours/:tourName" element={<TourDetails />} />
-				</Routes>
+				<Footer>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/merch" element={<MerchPage />} />
+						<Route path="/merch/:merchName" element={<MerchItemPage />} />
+						<Route path="/tours" element={<Tours />} />
+						<Route path="/tours/:tourName" element={<TourDetails />} />
+					</Routes>
+				</Footer>
 			</BrowserRouter>
 		</ThemeProvider>
 	);
