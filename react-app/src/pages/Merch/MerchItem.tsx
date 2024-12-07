@@ -9,6 +9,7 @@ import { SHIPPING_DATA } from "../../constants/shippingData";
 import { Shipping } from "../../types/Shipping";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import { IMAGE_PATH } from "../../constants/imagePath";
 
 
 export const MerchItemPage: React.FC = () => 
@@ -76,7 +77,7 @@ export const MerchItemPage: React.FC = () =>
                             {
                                 merchItem!.imagePaths.map((imagePath: string) =>
                                 (
-                                    <Box component="img" src={imagePath} width="100%" />
+                                    <Box component="img" src={IMAGE_PATH + imagePath + "_large.jpg"} width="100%" />
                                 ))
                             }
                         </Carousel>
@@ -210,7 +211,7 @@ export const MerchItemPage: React.FC = () =>
                         {
                             merchItem!.imagePaths.map((imagePath: string) =>
                             (
-                                <Box component="img" src={imagePath} width="100%" />
+                                <Box component="img" src={IMAGE_PATH + imagePath + "_large.jpg"} width="100%" />
                             ))
                         }
                     </Carousel>

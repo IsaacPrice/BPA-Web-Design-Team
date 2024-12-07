@@ -3,6 +3,7 @@ import { Box, Link, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { TOUR_DATA } from "../../constants/tourData";
 import { Tour } from "../../types/Tour";
+import { IMAGE_PATH } from "../../constants/imagePath";
 
 /*
 Indianapolis, Indiana, Lucas Oil Stadium, March 31th, 2025 - ADDED
@@ -26,7 +27,7 @@ export const Tours: React.FC = () =>
                         <Paper sx={{ padding: '15px' }}>
                             <Box 
                                 component="img" 
-                                src={"/images/" + tour.images[0].path + "_small.jpg"} 
+                                src={IMAGE_PATH + tour.images[0].path + "_small.jpg"} 
                                 alt={tour.name} 
                                 sx={{ width: '100%', borderRadius: '3px' }} />
 
