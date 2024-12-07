@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { useParams } from "react-router-dom";
 import { Tour } from "../../types/Tour";
-import { TourData } from "../../constants/tourData";
+import { TOUR_DATA } from "../../constants/tourData";
 import { Box, Button, Link, Paper, Typography } from "@mui/material";
 import { Carousel } from "../../components/Carousel";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
@@ -20,7 +20,7 @@ export const TourDetails: React.FC = () =>
     {
         if (tourName !== undefined)
         {
-            setTour(TourData.find((value: Tour) => value.linkName === tourName))
+            setTour(TOUR_DATA.find((value: Tour) => value.linkName === tourName))
         }
     }, [tourName]);
 

@@ -1,0 +1,21 @@
+Basically anything that has to do with a Date doesn't work properly
+
+The Merch page isn't filled out properly
+The Tour page isn'y filled out properly, make sure to cut down images to 3:2 ratio
+
+Both Merch and Tour pages need to have the paypal checkout, along with a prompt that says if they sucessfully purchased whatever
+
+Have to get the band member cards where it will fade between image when you hover on them.
+
+Most of the About and Home page are subject to (a lot) of change.
+
+The Contact Us page needs to have a response when the user submits a booking request.
+
+Most of the images need to be double checked and verified that they are labeled corerctly
+    source image is source, cut down source is about half that at around 1080p, and small is around 480p
+
+The footer is yet to be made, it probably just going to have our names, bpa numbers
+
+Update the photos of us, in the bandMember data to be the transparent background ones
+
+Change the about us carousel to be automatic when hovering over it.

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Link, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { TourData } from "../../constants/tourData";
+import { TOUR_DATA } from "../../constants/tourData";
 import { Tour } from "../../types/Tour";
 
 /*
@@ -21,7 +21,7 @@ export const Tours: React.FC = () =>
             </Grid>
 
             {
-                TourData.map((tour: Tour) =>
+                TOUR_DATA.map((tour: Tour) =>
                     <Grid size={{ xs: 12, md: 6, lg: 3 }}>
                         <Paper sx={{ padding: '15px' }}>
                             <Box 
