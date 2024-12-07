@@ -7,6 +7,7 @@ import { Box, Button, Link, Paper, Typography } from "@mui/material";
 import { Carousel } from "../../components/Carousel";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import { CreditedImage } from "../../types/CreditedImage";
+import { IMAGE_PATH } from "../../constants/imagePath";
 
 
 export const TourDetails: React.FC = () =>
@@ -52,7 +53,7 @@ export const TourDetails: React.FC = () =>
                             <Box sx={{ display: 'flex', flexDirection: 'column', padding: '10px' }}>
                                 <Box 
                                     component="img" 
-                                    src={"/images/" + image.path + "_large.jpg"} 
+                                    src={IMAGE_PATH + image.path + "_large.jpg"} 
                                     alt={tour.name} 
                                     sx={{ width: '100%', borderRadius: '3px' }} 
                                     />
