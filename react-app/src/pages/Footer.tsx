@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { IMAGE_PATH } from "../constants/imagePath";
 
 
 const footerStyle: React.CSSProperties = 
