@@ -50,7 +50,7 @@ export const Home: React.FC = () =>
                 {
                     MERCH_DATA.slice(0, 3).map((merch: Merch) =>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px', minWidth: '200px' }}>
-                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
+                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_large.JPG"} alt={merch.name} width="100%" />
 
                             <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
@@ -73,7 +73,7 @@ export const Home: React.FC = () =>
                         <Paper sx={{ padding: '15px', maxWidth: '300px', minWidth: '200px' }}>
                             <Box 
                                 component="img" 
-                                src={IMAGE_PATH + tour.images[0].path + "_large.JPG"} 
+                                src={IMAGE_PATH + tour.images[0].path + "_large.jpg"} 
                                 alt={tour.name} 
                                 sx={{ width: '100%', borderRadius: '3px' }} />
 

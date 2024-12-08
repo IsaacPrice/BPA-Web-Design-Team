@@ -166,7 +166,7 @@ export const MerchItemPage: React.FC = () =>
                             return (
                                 <Grid size={{ xs: 6, sm: 4, md: 2 }}>
                                     <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
-                                        <Box component="img" src={merch.imagePaths[0]} alt={merch.name} width="100%" />
+                                        <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + '_large.JPG'} alt={merch.name} width="100%" />
 
                                         <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
