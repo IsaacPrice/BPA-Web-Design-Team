@@ -28,7 +28,7 @@ export const Home: React.FC = () =>
     return (
         <Grid container spacing={3} padding="15px">
             <Grid size={12}>
-                <Typography variant="h1" color="textPrimary" >First Album Out Now!</Typography>
+                <Typography variant="h1" color="textPrimary" >The Senior Year Blues Out Now!</Typography>
             </Grid>
 
             <Grid size={12} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '25px' }}>
@@ -38,7 +38,8 @@ export const Home: React.FC = () =>
                     src={IMAGE_PATH + "StageFright/stageFright_large.png"} 
                     sx={{ width: '100%', maxWidth: '500px' }}
                     />
-                <Typography variant="h2" marginBottom="15px">[Album Name]</Typography>
+                <Typography variant="h2">The Senior Year Blues</Typography>
+                <Typography marginBottom="15px">Out on all major streaming platforms!</Typography>
                 <Button>Listen Now</Button>
             </Grid>
 

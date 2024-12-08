@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid2';
 import { NavigateFunction, useNavigate, useParams } from "react-router-dom";
 import { Merch } from "../../types/Merch";
 import { MERCH_DATA } from "../../constants/merchData";
-import { Box, Paper, Typography, Link, Button, Drawer, IconButton, Dialog } from "@mui/material";
+import { Box, Paper, Typography, Link, Drawer, IconButton, Dialog, ToggleButton } from "@mui/material";
 import { Carousel } from "../../components/Carousel";
 import { SHIPPING_DATA } from "../../constants/shippingData";
 import { Shipping } from "../../types/Shipping";
@@ -16,6 +16,7 @@ import PayPalCheckout from "../../components/PayPalCheckout";
 export const MerchItemPage: React.FC = () => 
 {
     const [merchItem, setMerchItem] = useState<Merch | undefined>(undefined);
+    const [selectedSize, setSelectedSize] = useState<string | undefined>(undefined);
     const [isShippingOpen, setIsShippingOpen] = useState<boolean>(false);
     const [isReturnPolicyOpen, setIsReturnPolicyOpen] = useState<boolean>(false);
     const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
@@ -69,6 +70,12 @@ export const MerchItemPage: React.FC = () =>
     }
 
 
+    const onSizeChange = (event: React.MouseEvent<HTMLElement>, newSize: string | undefined): void =>
+    {
+        setSelectedSize(newSize);
+    }
+
+
     return (
         <>
         {
@@ -112,14 +119,25 @@ export const MerchItemPage: React.FC = () =>
                                 marginBottom: '25px'
                                 }}>
                                 {
-                                    merchItem!.sizes.map((size: string) =>
-                                    {
-                                        return (
-                                            <Paper sx={{ padding: '10px' }}>
-                                                <Typography>{size}</Typography>
-                                            </Paper>   
-                                        )
-                                    })
+                                    merchItem!.sizes.map((size: string) => (
+                                        <ToggleButton
+                                            key={size}
+                                            value={size}
+                                            selected={selectedSize === size}
+                                            onChange={onSizeChange}
+                                            sx={{
+                                                padding: '10px',
+                                                border: '1px solid',
+                                                borderColor: selectedSize === size ? 'primary.main' : 'grey.400',
+                                                backgroundColor: selectedSize === size ? 'primary.light' : 'background.paper',
+                                                '&:hover': {
+                                                    backgroundColor: 'primary.light',
+                                                },
+                                            }}
+                                        >
+                                            <Typography>{size}</Typography>
+                                        </ToggleButton>
+                                    ))
                                 }
                             </Box>
                         </>
@@ -132,7 +150,7 @@ export const MerchItemPage: React.FC = () =>
 
                     <Box className="centerAlignedRow" marginBottom="25px">
                         <Typography variant="h4" fontWeight={700}>$ {merchItem!.price}</Typography>
-                        <PayPalCheckout productId={merchItem!.productId} price={merchItem!.price} />  
+                        <PayPalCheckout productId='3' price={merchItem!.price} />
                     </Box>
                 </Grid>
 

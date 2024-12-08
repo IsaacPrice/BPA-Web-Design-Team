@@ -4,6 +4,7 @@ import { BLANK_BOOKING_DATA } from "../../constants/bookingData";
 import { Booking } from "../../types/Booking";
 import { Button, MenuItem, TextField } from "@mui/material";
 import { BookingRequestDialog } from "./BookingRequestDialog";
+import { BookingSubmitted } from "./BookingSubmitted";
 
 
 const stateInitials: string[] = [
@@ -19,6 +20,7 @@ export const BookingRequest: React.FC = () =>
 {    
     const [bookingRequest, setBookingRequest] = useState<Booking>(BLANK_BOOKING_DATA);
 	const [confirmBookingRequest, setConfirmBookingRequest] = useState<boolean>(false);
+    const [bookingSubmitted, setBookingSubmitted] = useState<boolean>(false);
 
     
     const onBookingRequestUpdate = (event: ChangeEvent<HTMLInputElement>): void => 
@@ -45,6 +47,13 @@ export const BookingRequest: React.FC = () =>
     const onSubmittedBookingRequest = (): void =>
     {
         setConfirmBookingRequest(false);
+        setBookingSubmitted(true);
+    }
+
+
+    const onCloseSubmittedRequest = (): void =>
+    {
+        setBookingSubmitted(false);
     }
 
 
@@ -168,6 +177,11 @@ export const BookingRequest: React.FC = () =>
                 bookingRequest={bookingRequest} 
                 onClose={onCancelBookingSubmit}
                 onSubmit={onSubmittedBookingRequest}
+                />
+            
+            <BookingSubmitted 
+                open={bookingSubmitted} 
+                onClose={onCloseSubmittedRequest}
                 />
         </>
     );

@@ -32,13 +32,13 @@ export const Footer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 
                     <Grid size={{ xs: 12, md: 4 }}>
                         <Typography>Isaac Price - 97946 - Web Developer</Typography>
-                        <Typography>Mattias Niebbia - ****** - Idea Man & Photographer</Typography>
-                        <Typography>Clark Meridew - ****** - Media Editor</Typography>
-                        <Typography>Rick Orr - ***** - Graphic Designer</Typography>
+                        <Typography>Mattias Niebbia - 133023 - Creative Director & Photographer</Typography>
+                        <Typography>Clark Meridew - 133013 - Media Editor</Typography>
+                        <Typography>Rick Orr - 97941 - Graphic Designer</Typography>
                     </Grid>
 
                     <Grid size={{ xs: 12, md: 6 }}>
-                        <Typography>© 2025 Stage Fright. All Rights Reserved.</Typography>
+                        <Typography>© 2024 Stage Fright. All Rights Reserved.</Typography>
                         <Typography>This website is provided as-is. The content is free to use, and the site owner holds no liability for its usage.</Typography>
                         <Typography>This site does not collect or store personal data.</Typography>
                         <Typography>contact@stagefrightband.com</Typography>

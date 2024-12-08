@@ -4,6 +4,8 @@ This repository contains the official website for the up-and-coming local band, 
 
 The website is hosted on **GitHub Pages** for easy access and presentation.
 
+**BE AWARE: THE PAYPAL CHECKOUT ACTUALLY WORKS, THERE ARE NO REFUNDS AND NO ACTUAL PRODUCTS**
+
 ---
 
 ## Table of Contents
@@ -12,6 +14,7 @@ The website is hosted on **GitHub Pages** for easy access and presentation.
 3. [Project Structure](#project-structure)
 4. [Relevant Documentation](#relevant-documentation)
 5. [Credits](#credits)
+6. [Other](#other)
 
 ---
 
@@ -19,7 +22,7 @@ The website is hosted on **GitHub Pages** for easy access and presentation.
 
 This project is created for the **Business Professionals of America (BPA)** web design team competition. The website is designed to promote the band **Stage Fright**, which includes:
 - **About Us**: A description of the band and profiles for each band member.
-- **Tour Dates**: A schedule of upcoming events and online ticket purchasing options.
+- **Tour Dates**: A schedule of upcoming events and online ticket purchasing options. 
 - **Merch**: A page to display merchandise for sale (to be updated with actual products).
 - **Contact Us**: Contact information including booking and customer service links.
 
@@ -79,3 +82,10 @@ Here are the documents that are relevant to the project:
     - TypeScript
     - Material-UI (MUI)
     - GitHub Pages for hosting
+
+---
+
+## Other
+
+**Some odd code accomodations:**
+ - Since this is being hosted on github pages, I was required to use the useNavigate for anything related to routing, even on Link elements (due to it going not to '/' but '/BPA-Website-Design-Team/' for everything)

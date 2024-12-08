@@ -18,9 +18,7 @@ export const ReturnPolicyDialog: React.FC<ReturnPolicyDialogProps> = (props: Ret
             <DialogContent>
                 <Typography textAlign="left" variant="h6" gutterBottom>Merchandise Returns</Typography>
                 <Typography textAlign="left" variant="body1">
-                    - Returns are accepted within 30 days of purchase. <br />
-                    - Items must be unused, unwashed, and in their original condition with tags attached. <br />
-                    - Clearance or final sale items are not eligible for returns or exchanges.
+                    - All Merchandice sales are final.
                 </Typography>
                 <Typography textAlign="left" variant="h6" gutterBottom sx={{ mt: 2 }}>Ticket Purchases</Typography>
                 <Typography textAlign="left" variant="body1">

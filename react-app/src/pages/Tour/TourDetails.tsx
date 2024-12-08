@@ -8,6 +8,7 @@ import { Carousel } from "../../components/Carousel";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import { CreditedImage } from "../../types/CreditedImage";
 import { IMAGE_PATH } from "../../constants/imagePath";
+import PayPalCheckout from "../../components/PayPalCheckout";
 
 
 export const TourDetails: React.FC = () =>
@@ -91,7 +92,7 @@ export const TourDetails: React.FC = () =>
 
                                 <Box className="centerAlignedRow" marginBottom="10px">
                                     <Typography variant="h4" fontWeight={700}>$ {tour.ticketPrice}</Typography>
-                                    <Button>Buy Now</Button>
+                                    <PayPalCheckout productId="1" price={tour.ticketPrice} />
                                 </Box>
                                 
                                 <Typography><Link onClick={onOpenReturnPolicy}>Return Policy</Link></Typography>

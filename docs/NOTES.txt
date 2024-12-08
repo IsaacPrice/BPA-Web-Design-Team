@@ -3,17 +3,9 @@ Replace anything with a href to a onclick => navigate - FIXED: Make note of this
 Update the github repository to include the better documentation, and instructions to build and use on their own - FIXED: 
     Not all documentation is added though
 
+Sizes on the merch needs to be functional
+
 Basically anything that has to do with a Date doesn't work properly
-
-Both Merch and Tour pages need to have the paypal checkout, along with a prompt that says if they sucessfully purchased whatever
-
-The Contact Us page needs to have a response when the user submits a booking request.
-
-the home page has a button 'listen now', but it doesn't do anything. Figure out if we make a page with more links,
-    leave as is, or make some sort of indication that it should redirect them
-
-Change the about us carousel to be automatic when hovering over band members.
-
 
 Media left:
     Merch & Graphics
