@@ -40,4 +40,38 @@ export const TOUR_DATA: Tour[] =
         description: '',
         ticketPrice: 34.99,
     },
+    {
+        name: 'Ford Center',
+        linkName: 'ford-center',
+        address: '1 Southeast Martin Luther King Jr. Boulevard',
+        location: 'Evansville, Indiana',
+        date: new Date(),
+        startTime: '2:00 PM',
+        endTime: '6:00 PM',
+        images: [
+            { path: 'FordCenter/1', link: 'https://commons.wikimedia.org/w/index.php?curid=48100052', creditText: 'By Nyttend - Own work, Public Domain' },
+            { path: 'FordCenter/2', link: 'https://commons.wikimedia.org/w/index.php?curid=17261729', creditText: 'By Indymac5 - Own work, CC BY-SA 3.0' }
+        ],
+        availibleTickets: 230,
+        organizer: '',
+        description: '',
+        ticketPrice: 44.99,
+    },
+    {
+        name: 'Allen County War Memorial Coliseum',
+        linkName: 'allen-county-war-memorial-coliseum',
+        address: '4000 Parnell Avenue',
+        location: 'Fort Wayne, Indiana',
+        date: new Date(),
+        startTime: '5:00 PM',
+        endTime: '8:30 PM',
+        images: [
+            { path: 'WarMemorialColiseum/1', link: 'https://commons.wikimedia.org/w/index.php?curid=6909331', creditText: 'By FTSKfan at English Wikipedia - Transferred from en.wikipedia to Commons by Firefox13 using CommonsHelper., Public Domain' },
+            { path: 'WarMemorialColiseum/2', link: 'https://commons.wikimedia.org/w/index.php?curid=89534539', creditText: 'By Brycesteiner - Own work, CC BY-SA 4.0' }
+        ],
+        availibleTickets: 112,
+        organizer: '',
+        description: '',
+        ticketPrice: 99.99,
+    },
 ]

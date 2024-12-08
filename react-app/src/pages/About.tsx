@@ -12,10 +12,6 @@ export const About: React.FC = () =>
 {
     const getProperPath = (imagePath: string): string =>
     {
-        if (imagePath.includes('1'))
-        {
-            return IMAGE_PATH + imagePath + "_large.png";
-        }
         return IMAGE_PATH + imagePath + "_large.jpg";
     }
 

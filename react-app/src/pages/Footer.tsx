@@ -24,8 +24,7 @@ export const Footer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             <footer style={footerStyle}>
                 <Grid container spacing={3}>
                     <Grid size={{ xs: 12, md: 2 }}>
-                        <Typography>[Team Name]</Typography>
-                        <Typography>[Chapter Name]</Typography>
+                        <Typography>Mental Crashout</Typography>
                         <Typography>Warsaw Area Career Center</Typography>
                         <Typography>Warsaw, IN, 2024</Typography>
                     </Grid>
