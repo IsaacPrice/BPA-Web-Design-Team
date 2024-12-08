@@ -87,7 +87,7 @@ export const MerchItemPage: React.FC = () =>
                             {
                                 merchItem!.imagePaths.map((imagePath: string) =>
                                 (
-                                    <Box component="img" src={IMAGE_PATH + imagePath + "_large.jpg"} width="100%" />
+                                    <Box component="img" src={IMAGE_PATH + imagePath + "_large.JPG"} width="100%" />
                                 ))
                             }
                         </Carousel>

@@ -73,7 +73,7 @@ export const Home: React.FC = () =>
                         <Paper sx={{ padding: '15px', maxWidth: '300px', minWidth: '200px' }}>
                             <Box 
                                 component="img" 
-                                src={IMAGE_PATH + tour.images[0].path + "_small.jpg"} 
+                                src={IMAGE_PATH + tour.images[0].path + "_large.JPG"} 
                                 alt={tour.name} 
                                 sx={{ width: '100%', borderRadius: '3px' }} />
 
