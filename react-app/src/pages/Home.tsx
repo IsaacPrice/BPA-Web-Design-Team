@@ -48,7 +48,7 @@ export const Home: React.FC = () =>
 
                 <Box sx={previewBoxStyle}>
                 {
-                    MERCH_DATA.slice(0, 3).map((merch: Merch) =>
+                    MERCH_DATA.slice(0, 5).map((merch: Merch) =>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px', minWidth: '200px' }}>
                             <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_large.JPG"} alt={merch.name} width="100%" />
 
