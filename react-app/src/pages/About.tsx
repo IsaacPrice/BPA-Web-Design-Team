@@ -12,7 +12,7 @@ export const About: React.FC = () =>
 {
     const getProperPath = (imagePath: string): string =>
     {
-        return IMAGE_PATH + imagePath + "_large.jpg";
+        return IMAGE_PATH + imagePath + "_large.png";
     }
 
 
