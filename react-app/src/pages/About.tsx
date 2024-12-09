@@ -71,7 +71,7 @@ export const About: React.FC = () =>
                         </TimelineSeparator>
                         <TimelineContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'end' }}>
                             <Typography variant="h5" marginBottom="15px">Clark joins in</Typography>
-                            <Box sx={{ width: '450px' }}>
+                            <Box sx={{ maxWidth: '450px' }}>
                                 <Typography>Clark, Mattias’ cousin, was in a rough spot when he first picked up his guitar in the garage. Struggling with personal challenges, he was invited by Mattias to join a session with the band. That day, Rick discovered Clark’s raw talent and saw the missing piece of their group. With music as his new anchor, Clark overcame his struggles, adding fiery riffs to the band’s sound and solidifying Stage Fright’s lineup.</Typography>
                             </Box>
                         </TimelineContent>

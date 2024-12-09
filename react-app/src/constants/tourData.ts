@@ -8,7 +8,7 @@ export const TOUR_DATA: Tour[] =
         linkName: 'lucas-oil-stadium',
         address: '500 South Capitol Avenue',
         location: 'Indianapolis, Indiana',
-        date: new Date(),
+        date: new Date('2025-03-31'),
         startTime: '1:30 PM',
         endTime: '4:30 PM',
         images: [
@@ -26,7 +26,7 @@ export const TOUR_DATA: Tour[] =
         linkName: 'notre-dame-stadium',
         address: '2010 Moose Krause Circle',
         location: 'Notre Dame, Indiana',
-        date: new Date(),
+        date: new Date('2025-04-14'),
         startTime: '5:00 PM',
         endTime: '8:30 PM',
         images: [
@@ -41,11 +41,28 @@ export const TOUR_DATA: Tour[] =
         ticketPrice: 34.99,
     },
     {
+        name: 'Allen County War Memorial Coliseum',
+        linkName: 'allen-county-war-memorial-coliseum',
+        address: '4000 Parnell Avenue',
+        location: 'Fort Wayne, Indiana',
+        date: new Date('2025-04-21'),
+        startTime: '5:00 PM',
+        endTime: '8:30 PM',
+        images: [
+            { path: 'WarMemorialColiseum/1', link: 'https://commons.wikimedia.org/w/index.php?curid=6909331', creditText: 'By FTSKfan at English Wikipedia - Transferred from en.wikipedia to Commons by Firefox13 using CommonsHelper., Public Domain' },
+            { path: 'WarMemorialColiseum/2', link: 'https://commons.wikimedia.org/w/index.php?curid=89534539', creditText: 'By Brycesteiner - Own work, CC BY-SA 4.0' }
+        ],
+        availibleTickets: 112,
+        organizer: '',
+        description: '',
+        ticketPrice: 39.99,
+    },
+    {
         name: 'Ford Center',
         linkName: 'ford-center',
         address: '1 Southeast Martin Luther King Jr. Boulevard',
         location: 'Evansville, Indiana',
-        date: new Date(),
+        date: new Date('2025-04-28'),
         startTime: '2:00 PM',
         endTime: '6:00 PM',
         images: [
@@ -56,22 +73,5 @@ export const TOUR_DATA: Tour[] =
         organizer: '',
         description: '',
         ticketPrice: 44.99,
-    },
-    {
-        name: 'Allen County War Memorial Coliseum',
-        linkName: 'allen-county-war-memorial-coliseum',
-        address: '4000 Parnell Avenue',
-        location: 'Fort Wayne, Indiana',
-        date: new Date(),
-        startTime: '5:00 PM',
-        endTime: '8:30 PM',
-        images: [
-            { path: 'WarMemorialColiseum/1', link: 'https://commons.wikimedia.org/w/index.php?curid=6909331', creditText: 'By FTSKfan at English Wikipedia - Transferred from en.wikipedia to Commons by Firefox13 using CommonsHelper., Public Domain' },
-            { path: 'WarMemorialColiseum/2', link: 'https://commons.wikimedia.org/w/index.php?curid=89534539', creditText: 'By Brycesteiner - Own work, CC BY-SA 4.0' }
-        ],
-        availibleTickets: 112,
-        organizer: '',
-        description: '',
-        ticketPrice: 99.99,
     },
 ]

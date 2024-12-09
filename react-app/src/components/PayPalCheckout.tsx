@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     PayPalButtons,
-    PayPalButtonsComponentProps,
     PayPalScriptProvider,
 } from "@paypal/react-paypal-js";
 
@@ -18,7 +17,7 @@ export const PayPalCheckout: React.FC<PayPalCheckoutProps> = (props: PayPalCheck
     return (
         <PayPalScriptProvider options={{ "clientId": "AcNNJiblrQ2kYvm4HIPf2wE0RmcwOYvs2erNpZpGvlhNH-YHq6B0dc5QGC0znLQJNCwADSv3NJfvIQvF" }}>
             <PayPalButtons
-                createOrder={(data, actions) => {
+                createOrder={(_, actions) => {
                     return actions.order.create({
                         purchase_units: [{
                             amount: {
@@ -29,7 +28,7 @@ export const PayPalCheckout: React.FC<PayPalCheckoutProps> = (props: PayPalCheck
                         intent: "CAPTURE",
                     });
                 }}
-                onApprove={(data, actions) => {
+                onApprove={(_, actions) => {
                     return actions.order!.capture().then((details) => {
                         alert(`Transaction completed by ${details.payer!.name!.given_name}`);
                         console.log('Order details:', details);

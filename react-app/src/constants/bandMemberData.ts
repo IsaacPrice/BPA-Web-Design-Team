@@ -1,6 +1,5 @@
 import { BandMember } from "../types/BandMember";
 
-//Composer, cat-lover, and groove-master extraordinaire. Isaac lays the foundation for the band’s catchy sound.
 
 export const BAND_MEMBER_DATA: BandMember[] =
 [
@@ -27,7 +26,7 @@ export const BAND_MEMBER_DATA: BandMember[] =
     },
     {
         name: 'Rick Orr',
-        role: 'Main Singer',
+        role: 'Lead Singer',
         age: 18,
         images: ['RickOrr/1', 'RickOrr/2', 'RickOrr/3'],
         bio: "The voice and vision behind Stage Fright, Rick’s journey began with a silent walk and a loud idea. He’s the spark that lit the flame."

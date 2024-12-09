@@ -37,6 +37,13 @@ export const BookingRequestDialog: React.FC<BookingRequestDialogProps> = (props:
     }
 
 
+    const getActualDate = (): string =>
+    {
+        const date: Date = new Date(new Date(props.bookingRequest.date).getTime() + new Date().getTimezoneOffset() * 60000)
+        return date.toLocaleDateString();
+    }
+
+
     return (
         <Dialog open={props.isOpen} onClose={props.onClose}>
             <DialogTitle>Confirm Booking Request</DialogTitle>
@@ -56,7 +63,7 @@ export const BookingRequestDialog: React.FC<BookingRequestDialogProps> = (props:
                 <Typography sx={{ marginBottom: '25px' }}>{props.bookingRequest.address} {props.bookingRequest.city}, {props.bookingRequest.state}</Typography>
             
                 <Typography sx={{ borderBottom: '1px solid black' }}>Time</Typography>
-                <Typography sx={{ marginBottom: '25px' }}>{new Date().toLocaleDateString()}, {formatTime(props.bookingRequest.time)}</Typography>
+                <Typography sx={{ marginBottom: '25px' }}>{getActualDate()}, {formatTime(props.bookingRequest.time)}</Typography>
                 
                 {
                     props.bookingRequest.notes &&
