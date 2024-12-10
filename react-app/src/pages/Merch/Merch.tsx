@@ -22,7 +22,7 @@ export const MerchPage: React.FC = () =>
                 MERCH_DATA.map((merch: Merch) =>
                     <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3}}>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
-                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_large.jpg"} alt={merch.name} width="100%" />
+                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
                             <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
