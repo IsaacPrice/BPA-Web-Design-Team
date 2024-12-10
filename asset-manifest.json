@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BPA-Web-Design-Team/static/css/main.615fae58.css",
+    "main.js": "/BPA-Web-Design-Team/static/js/main.cafc0966.js",
+    "static/js/453.2a82e7ac.chunk.js": "/BPA-Web-Design-Team/static/js/453.2a82e7ac.chunk.js",
+    "static/media/centurygothic.ttf": "/BPA-Web-Design-Team/static/media/centurygothic.b194aa2bd524e2c973f7.ttf",
+    "index.html": "/BPA-Web-Design-Team/index.html",
+    "main.615fae58.css.map": "/BPA-Web-Design-Team/static/css/main.615fae58.css.map",
+    "main.cafc0966.js.map": "/BPA-Web-Design-Team/static/js/main.cafc0966.js.map",
+    "453.2a82e7ac.chunk.js.map": "/BPA-Web-Design-Team/static/js/453.2a82e7ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.615fae58.css",
+    "static/js/main.cafc0966.js"
+  ]
+}
