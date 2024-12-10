@@ -29,6 +29,7 @@ export const BookingRequest: React.FC = () =>
             ...bookingRequest,
             [event.target.name]: event.target.value
         });
+        console.log(event.target.value);
     }
 
 

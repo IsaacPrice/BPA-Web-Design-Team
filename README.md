@@ -1,6 +1,6 @@
 # Stage Fright Band Website
 
-This repository contains the official website for the up-and-coming local band, **Stage Fright**. It is built using **React**, **TypeScript**, and **Material-UI (MUI)** to deliver a visually appealing and responsive website with key features like tour dates, merchandise, and band member profiles.
+This repository contains the official website for the up-and-coming local band, **Stage Fright**. It is built using **React**, **TypeScript**, and **Material-UI (MUI)** to deliver a visually appealing and responsive website.
 
 The website is hosted on **GitHub Pages** for easy access and presentation.
 
@@ -23,7 +23,7 @@ The website is hosted on **GitHub Pages** for easy access and presentation.
 This project is created for the **Business Professionals of America (BPA)** web design team competition. The website is designed to promote the band **Stage Fright**, which includes:
 - **About Us**: A description of the band and profiles for each band member.
 - **Tour Dates**: A schedule of upcoming events and online ticket purchasing options. 
-- **Merch**: A page to display merchandise for sale (to be updated with actual products).
+- **Merch**: A page to display merchandise for sale.
 - **Contact Us**: Contact information including booking and customer service links.
 
 ---
@@ -64,9 +64,7 @@ The project is organized into two main directories:
 ## Relevant Documentation
 
 Here are the documents that are relevant to the project:
-- [Works Cited](#) (To be added)
-- [Release Forms](#) (To be added)
-- [BPA Guidelines](#) (To be added)
+- [Works Cited](#docs/Works Cited.pdf) (also added under each image)
 
 ---
 
@@ -75,7 +73,7 @@ Here are the documents that are relevant to the project:
 - **Team Members**: 
     - Rick: Graphic Designer
     - Clark: Media Editor
-    - Mattias: Idea Man & Photographer
+    - Mattias: Creative Director & Photographer
     - Isaac: Web Developer
 - **Technologies Used**:
     - React
@@ -88,4 +86,4 @@ Here are the documents that are relevant to the project:
 ## Other
 
 **Some odd code accomodations:**
- - Since this is being hosted on github pages, I was required to use the useNavigate for anything related to routing, even on Link elements (due to it going not to '/' but '/BPA-Website-Design-Team/' for everything)
+ - Since this project is hosted on GitHub Pages, I chose to use `useNavigate` for routing, including on `Link` elements, because it simplifies navigation by correctly handling the base path (`/BPA-Website-Design-Team/` instead of `/`).

@@ -1,22 +1,10 @@
 Change the title and icon - FIXED: Make a change so that the title changes per page
-Replace anything with a href to a onclick => navigate - FIXED: Make note of this somewhere in the docs
-Update the github repository to include the better documentation, and instructions to build and use on their own - FIXED: 
-    Not all documentation is added though
-
-Sizes on the merch needs to be functional
-
-Basically anything that has to do with a Date doesn't work properly
 
 Media left:
-    Merch & Graphics
-    Tours (Original added photos need cropped to 3:2)
+    Tours need cropped to 1:1 or 3:2
     Verify Multiple Instances and Proper Usage of graphics
     StageFright Specific Media Needs Transparency Removed
-    Add All About Us Images
 
 
 ** Optional **
 Add scrolling animations
-
-ClientID: AR6HK8cx10O5gNsiCYvLboMjAZjT6Hm5tdlIGLhU721LWZ97VpaL8krLpQSt45u5cHDe4PRR7YMHIXmY
-Application: EEF_2L8vMrhLiU-gd0T82o0hP99Oqe8G3dFQYtAZFUggzpAVmbkyD1dT8Jn_ndjspLQCVcIe8zpTnrF-
