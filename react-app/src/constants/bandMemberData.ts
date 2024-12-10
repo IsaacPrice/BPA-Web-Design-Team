@@ -7,7 +7,7 @@ export const BAND_MEMBER_DATA: BandMember[] =
         name: 'Isaac Price',
         role: 'Bass',
         age: 17,
-        images: ['IsaacPrice/1', 'IsaacPrice/2'],
+        images: ['IsaacPrice/1', 'IsaacPrice/2', 'IsaacPrice/3'],
         bio: "Composer, cat-lover, and groove-master extraordinaire. Isaac lays the foundation for the band’s catchy sound."
     },
     {
