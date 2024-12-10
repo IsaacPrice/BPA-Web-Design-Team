@@ -50,7 +50,7 @@ export const Home: React.FC = () =>
                 {
                     MERCH_DATA.slice(0, 5).map((merch: Merch) =>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px', minWidth: '200px' }}>
-                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_large.JPG"} alt={merch.name} width="100%" />
+                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
                             <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 

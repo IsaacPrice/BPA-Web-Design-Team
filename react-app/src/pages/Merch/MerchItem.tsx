@@ -87,7 +87,7 @@ export const MerchItemPage: React.FC = () =>
                             {
                                 merchItem!.imagePaths.map((imagePath: string) =>
                                 (
-                                    <Box component="img" src={IMAGE_PATH + imagePath + "_large.JPG"} width="100%" />
+                                    <Box component="img" src={IMAGE_PATH + imagePath + "_large.jpg"} width="100%" />
                                 ))
                             }
                         </Carousel>
@@ -162,45 +162,42 @@ export const MerchItemPage: React.FC = () =>
                         MERCH_DATA
                             .filter((merch: Merch) => merch.linkName !== merchName)
                             .map((merch: Merch) =>
-                        {
-                            return (
-                                <Grid size={{ xs: 6, sm: 4, md: 2 }}>
-                                    <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
-                                        <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + '_large.JPG'} alt={merch.name} width="100%" />
+                            <Grid size={{ xs: 6, sm: 4, md: 2 }}>
+                                <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
+                                    <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + '_small.jpg'} alt={merch.name} width="100%" />
 
-                                        <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
+                                    <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
-                                        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                                            <Typography color="textSecondary">{merch.category}</Typography>
-                                            <Typography variant="h5" fontWeight={700}>$ {merch.price}</Typography>
-                                        </Box>
+                                    <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                                        <Typography color="textSecondary">{merch.category}</Typography>
+                                        <Typography variant="h5" fontWeight={700}>$ {merch.price}</Typography>
+                                    </Box>
 
-                                        {
-                                            (merch.sizes && merch.sizeAbbreviations) &&
-                                            <Box sx={{ 
-                                                display: 'flex', 
-                                                flexDirection: 'row', 
-                                                justifyContent: 'center', 
-                                                alignItems: 'center', 
-                                                gap: '10px',
-                                                flexWrap: 'wrap'
-                                                }}>
+                                    {
+                                        (merch.sizes && merch.sizeAbbreviations) &&
+                                        <Box sx={{ 
+                                            display: 'flex', 
+                                            flexDirection: 'row', 
+                                            justifyContent: 'center', 
+                                            alignItems: 'center', 
+                                            gap: '10px',
+                                            flexWrap: 'wrap'
+                                            }}>
+                                            {
+                                                merch.sizeAbbreviations.map((size: string) =>
                                                 {
-                                                    merch.sizeAbbreviations.map((size: string) =>
-                                                    {
-                                                        return (
-                                                            <Paper sx={{ padding: '5px' }}>
-                                                                <Typography>{size.toUpperCase()}</Typography>
-                                                            </Paper>   
-                                                        )
-                                                    })
-                                                }
-                                            </Box>
-                                        }
-                                    </Paper>
-                                </Grid>
-                            )
-                        })
+                                                    return (
+                                                        <Paper sx={{ padding: '5px' }}>
+                                                            <Typography>{size.toUpperCase()}</Typography>
+                                                        </Paper>   
+                                                    )
+                                                })
+                                            }
+                                        </Box>
+                                    }
+                                </Paper>
+                            </Grid>
+                        )
                     }
                 </Grid>
             </Grid>
@@ -232,7 +229,7 @@ export const MerchItemPage: React.FC = () =>
                         {
                             merchItem!.imagePaths.map((imagePath: string) =>
                             (
-                                <Box component="img" src={IMAGE_PATH + imagePath + "_large.jpg"} width="100%" />
+                                <Box component="img" src={IMAGE_PATH + imagePath + "_source.jpg"} width="100%" />
                             ))
                         }
                     </Carousel>
