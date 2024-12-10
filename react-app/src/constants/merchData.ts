@@ -76,7 +76,7 @@ export const MERCH_DATA: Merch[] =
         category: "sticker",
         price: 0.99,
         imagePaths: ["Merch/sticker1", "Merch/sticker2"],
-        description: "Its a sticker",
+        description: "It's a sticker featuring the album cover of The Senior Year Blues.",
     },
 
 ]
