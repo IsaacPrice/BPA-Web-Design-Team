@@ -1,1 +1,1 @@
-export const IMAGE_PATH: string = '/BPA-Web-Design-Team/images/'
+export const IMAGE_PATH: string = '/images/'

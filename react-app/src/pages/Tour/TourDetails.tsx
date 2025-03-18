@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 import { useParams } from "react-router-dom";
 import { Tour } from "../../types/Tour";
 import { TOUR_DATA } from "../../constants/tourData";
-import { Box, Button, Link, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography } from "@mui/material";
 import { Carousel } from "../../components/Carousel";
 import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import { CreditedImage } from "../../types/CreditedImage";

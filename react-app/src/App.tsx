@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home';
@@ -17,7 +16,7 @@ function App()
 {
 	return (
 		<ThemeProvider theme={theme}>
-			<BrowserRouter basename='BPA-Web-Design-Team'>
+			<BrowserRouter>
 				<NavBar />
 				<Footer>
 					<Routes>
