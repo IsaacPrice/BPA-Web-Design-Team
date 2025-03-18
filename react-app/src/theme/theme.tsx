@@ -1,8 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
 
-// 008fc4 (blue), 36393b (dark gray), bfb6bb (tan-ish), c3d350 (green)
-
 export const theme = createTheme(
 {
     palette: {

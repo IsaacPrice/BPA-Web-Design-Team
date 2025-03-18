@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, IconButton } from "@mui/material";
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CircleIcon from '@mui/icons-material/Circle';
+import { Box } from "@mui/material";
 
 
 type AutoCarouselProps =
@@ -27,17 +24,6 @@ export const AutoCarousel: React.FC<AutoCarouselProps> = (props: AutoCarouselPro
     }, []);
 
 
-    const onScrollLeft = (): void =>
-    {
-        setIndex((prevIndex: number) => (prevIndex > 0 ? prevIndex - 1 : (props.children ? props.children.length - 1 : 0)));
-    }
-
-    const onScrollRight = (): void =>
-    {
-        setIndex((prevIndex: number) => (props.children && prevIndex < props.children.length - 1 ? prevIndex + 1 : 0));
-    }
-
-
     const startAutoScroll = (): void => 
     {
         if (intervalRef.current !== undefined) 
@@ -50,6 +36,7 @@ export const AutoCarousel: React.FC<AutoCarouselProps> = (props: AutoCarouselPro
             setIndex((prevIndex) => (props.children && prevIndex < props.children.length - 1 ? prevIndex + 1 : 0));
         }, 1500); 
     };
+    
 
     const stopAutoScroll = (): void => 
     {

@@ -6,13 +6,6 @@ import { Tour } from "../../types/Tour";
 import { IMAGE_PATH } from "../../constants/imagePath";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
-/*
-Indianapolis, Indiana, Lucas Oil Stadium, March 31th, 2025 - ADDED
-South Bend, Indiana, Notre Dame Stadium, April 14th, 2025 - ADDED
-Fort Wayne, Indiana, Allen County War Memorial Coliseum, April 21th, 2025 
-Evansville, Indiana, Ford Center, April 28th, 2025
-*/
-
 
 export const Tours: React.FC = () => 
 {

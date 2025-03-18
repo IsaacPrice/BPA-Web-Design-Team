@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    PayPalButtons,
-    PayPalScriptProvider,
-} from "@paypal/react-paypal-js";
+import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 
 type PayPalCheckoutProps = 

@@ -2,9 +2,9 @@
 
 This repository contains the official website for the up-and-coming local band, **Stage Fright**. It is built using **React**, **TypeScript**, and **Material-UI (MUI)** to deliver a visually appealing and responsive website.
 
-The website is hosted on **GitHub Pages** for easy access and presentation.
+The website is hosted on **AWS** with **Cloudflare** as the DNS for easy access, presentation, and analytics.
 
-**BE AWARE: THE PAYPAL CHECKOUT ACTUALLY WORKS, THERE ARE NO REFUNDS AND NO ACTUAL PRODUCTS**
+**BE AWARE: THE PAYPAL CHECKOUT ACTUALLY WORKS, PLEASE DON'T BUY ANYTHING**
 
 ---
 
@@ -14,7 +14,6 @@ The website is hosted on **GitHub Pages** for easy access and presentation.
 3. [Project Structure](#project-structure)
 4. [Relevant Documentation](#relevant-documentation)
 5. [Credits](#credits)
-6. [Other](#other)
 
 ---
 
@@ -34,7 +33,7 @@ To run this project locally, follow the steps below:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/stage-fright-website.git
+    git clone https://github.com/Isaac-Price/stage-fright-website.git
     cd stage-fright-website/react-app
     ```
 
@@ -71,10 +70,10 @@ Here are the documents that are relevant to the project:
 ## Credits
 
 - **Team Members**: 
-    - Rick: Graphic Designer
-    - Clark: Media Editor
+    - Rick: Lead Graphic Designer
+    - Clark: Lead Media Editor
     - Mattias: Creative Director & Photographer
-    - Isaac: Web Developer
+    - Isaac: Lead Web Developer
 - **Technologies Used**:
     - React
     - TypeScript
@@ -82,8 +81,3 @@ Here are the documents that are relevant to the project:
     - GitHub Pages for hosting
 
 ---
-
-## Other
-
-**Some odd code accomodations:**
- - Since this project is hosted on GitHub Pages, I chose to use `useNavigate` for routing, including on `Link` elements, because it simplifies navigation by correctly handling the base path (`/BPA-Website-Design-Team/` instead of `/`).
