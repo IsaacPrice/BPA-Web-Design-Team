@@ -83,7 +83,7 @@ export const About: React.FC = () => {
               <Typography variant="h5" marginBottom="15px">
                 Rick Notices Mattias and Isaac
               </Typography>
-              <Box sx={{ width: isMobile ? "300px" : "auto" }}>
+              <Box sx={{ width: isMobile ? "250px" : "auto" }}>
                 <Typography>
                   One fateful day, Rick, aspiring to lead a band, found himself
                   walking in silence after his earbuds died. But that silence
@@ -111,7 +111,7 @@ export const About: React.FC = () => {
               <Typography variant="h5" marginBottom="15px">
                 Clark joins in
               </Typography>
-              <Box sx={{ width: isMobile ? "300px" : "auto" }}>
+              <Box sx={{ width: isMobile ? "250px" : "auto" }}>
                 <Typography>
                   Clark, Mattias’ cousin, was in a rough spot when he first
                   picked up his guitar in the garage. Struggling with personal
@@ -139,7 +139,7 @@ export const About: React.FC = () => {
               <Typography variant="h5" marginBottom="15px">
                 First Gig at The Rusty Kettle Café
               </Typography>
-              <Box sx={{ width: isMobile ? "300px" : "auto" }}>
+              <Box sx={{ width: isMobile ? "250px" : "auto" }}>
                 <Typography>
                   The band’s first gig was at The Rusty Kettle Café in
                   Bloomington, inspired by Rick’s older brother, an IU student
@@ -166,7 +166,7 @@ export const About: React.FC = () => {
               <Typography variant="h5" marginBottom="15px">
                 Released First Album
               </Typography>
-              <Box sx={{ width: isMobile ? "300px" : "auto" }}>
+              <Box sx={{ width: isMobile ? "250px" : "auto" }}>
                 <Typography>
                   Stage Fright’s debut album, The Senior Year Blues, captures
                   the highs and lows of high school life with a raw, relatable
