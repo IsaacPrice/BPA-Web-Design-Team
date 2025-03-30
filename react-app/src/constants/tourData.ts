@@ -8,7 +8,7 @@ export const TOUR_DATA: Tour[] =
         linkName: 'lucas-oil-stadium',
         address: '500 South Capitol Avenue',
         location: 'Indianapolis, Indiana',
-        date: new Date('2025-03-31'),
+        date: new Date('2025-06-30'),
         startTime: '1:30 PM',
         endTime: '4:30 PM',
         images: [
@@ -16,7 +16,7 @@ export const TOUR_DATA: Tour[] =
             { path: 'LucasOilStadium/2', link: 'https://commons.wikimedia.org/w/index.php?curid=153529692', creditText: "By SounderBruce - Own work, CC BY-SA 4.0" }, 
             { path: 'LucasOilStadium/3', link: 'https://commons.wikimedia.org/w/index.php?curid=5137707', creditText: "By myself (User:Piotrus) - Self-photographed, CC BY-SA 3.0" }
         ],
-        availibleTickets: 122,
+        availibleTickets: 35000,
         organizer: '',
         description: '',
         ticketPrice: 64.99,
@@ -26,7 +26,7 @@ export const TOUR_DATA: Tour[] =
         linkName: 'notre-dame-stadium',
         address: '2010 Moose Krause Circle',
         location: 'Notre Dame, Indiana',
-        date: new Date('2025-04-14'),
+        date: new Date('2025-05-14'),
         startTime: '5:00 PM',
         endTime: '8:30 PM',
         images: [
@@ -35,7 +35,7 @@ export const TOUR_DATA: Tour[] =
             { path: 'NotreDameStadium/3', link: 'https://commons.wikimedia.org/w/index.php?curid=113137093', creditText: "By Eccekevin - Own work, CC BY-SA 4.0" }, 
             { path: 'NotreDameStadium/4', link: 'https://commons.wikimedia.org/w/index.php?curid=24966893', creditText: "By MrCalifornia at English Wikipedia, Public Domain" }
         ],
-        availibleTickets: 305,
+        availibleTickets: 40000,
         organizer: '',
         description: '',
         ticketPrice: 34.99,
@@ -45,14 +45,14 @@ export const TOUR_DATA: Tour[] =
         linkName: 'allen-county-war-memorial-coliseum',
         address: '4000 Parnell Avenue',
         location: 'Fort Wayne, Indiana',
-        date: new Date('2025-04-21'),
+        date: new Date('2025-05-21'),
         startTime: '5:00 PM',
         endTime: '8:30 PM',
         images: [
             { path: 'WarMemorialColiseum/1', link: 'https://commons.wikimedia.org/w/index.php?curid=6909331', creditText: 'By FTSKfan at English Wikipedia - Transferred from en.wikipedia to Commons by Firefox13 using CommonsHelper., Public Domain' },
             { path: 'WarMemorialColiseum/2', link: 'https://commons.wikimedia.org/w/index.php?curid=89534539', creditText: 'By Brycesteiner - Own work, CC BY-SA 4.0' }
         ],
-        availibleTickets: 112,
+        availibleTickets: 13000,
         organizer: '',
         description: '',
         ticketPrice: 39.99,
@@ -62,14 +62,14 @@ export const TOUR_DATA: Tour[] =
         linkName: 'ford-center',
         address: '1 Southeast Martin Luther King Jr. Boulevard',
         location: 'Evansville, Indiana',
-        date: new Date('2025-04-28'),
+        date: new Date('2025-05-28'),
         startTime: '2:00 PM',
         endTime: '6:00 PM',
         images: [
             { path: 'FordCenter/1', link: 'https://commons.wikimedia.org/w/index.php?curid=48100052', creditText: 'By Nyttend - Own work, Public Domain' },
             { path: 'FordCenter/2', link: 'https://commons.wikimedia.org/w/index.php?curid=17261729', creditText: 'By Indymac5 - Own work, CC BY-SA 3.0' }
         ],
-        availibleTickets: 230,
+        availibleTickets: 10000,
         organizer: '',
         description: '',
         ticketPrice: 44.99,
