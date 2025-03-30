@@ -24,16 +24,15 @@ export const Footer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             <footer style={footerStyle}>
                 <Grid container spacing={3}>
                     <Grid size={{ xs: 12, md: 2 }}>
-                        <Typography>Mental Crashout</Typography>
                         <Typography>Warsaw Area Career Center</Typography>
                         <Typography>Warsaw, IN, 2024</Typography>
                     </Grid>
 
                     <Grid size={{ xs: 12, md: 4 }}>
-                        <Typography>Isaac Price - 97946 - Web Developer</Typography>
+                        <Typography>Isaac Price - 97946 - Lead Web Developer & Coordinator</Typography>
                         <Typography>Mattias Niebbia - 133023 - Creative Director & Photographer</Typography>
-                        <Typography>Clark Meridew - 133013 - Media Editor</Typography>
-                        <Typography>Rick Orr - 97941 - Graphic Designer</Typography>
+                        <Typography>Clark Meridew - 133013 - Lead Media Editor & Assistant Web Developer</Typography>
+                        <Typography>Rick Orr - 97941 - Lead Merchandice Designer</Typography>
                     </Grid>
 
                     <Grid size={{ xs: 12, md: 6 }}>

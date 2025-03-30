@@ -48,7 +48,7 @@ export const BookingRequestDialog: React.FC<BookingRequestDialogProps> = (props:
         <Dialog open={props.isOpen} onClose={props.onClose}>
             <DialogTitle>Confirm Booking Request</DialogTitle>
             <DialogContent>
-                <Typography variant="h5" sx={{ marginBottom: '25px' }}>Booking Request</Typography>
+                <Typography variant="h2" sx={{ marginBottom: '25px' }}>Booking Request</Typography>
                 
                 <Typography sx={{ borderBottom: '1px solid black' }}>Contact Info</Typography>
                 <Typography>{props.bookingRequest.name}</Typography>

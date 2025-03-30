@@ -20,6 +20,7 @@ import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import { IMAGE_PATH } from "../../constants/imagePath";
 import PayPalCheckout from "../../components/PayPalCheckout";
+import { theme } from "../../theme/theme";
 
 export const MerchItemPage: React.FC = () => {
   const [merchItem, setMerchItem] = useState<Merch | undefined>(undefined);
@@ -102,7 +103,7 @@ export const MerchItemPage: React.FC = () => {
           </Grid>
 
           <Grid size={{ xs: 12, md: 6 }}>
-            <Typography variant="h3">{merchItem!.name}</Typography>
+            <Typography variant="h1">{merchItem!.name}</Typography>
             <Typography
               variant="body2"
               color="textSecondary"
@@ -129,7 +130,7 @@ export const MerchItemPage: React.FC = () => {
               }}
             >
               <Box>
-                <Typography variant="h4" fontWeight={700} marginBottom="25px">
+                <Typography sx={{ ...theme.typography.h4, fontWeight: 700, marginBottom: "25px" }}>
                   $ {merchItem!.price}
                 </Typography>
                 {merchItem!.sizes && (
@@ -183,6 +184,13 @@ export const MerchItemPage: React.FC = () => {
                 <Link onClick={onOpenReturnPolicy}>Return Policy</Link>
               </Typography>
             </Box>
+
+            <Box className="centerAlignedRow" marginBottom="25px">
+              <Typography sx={{ ...theme.typography.h4, fontWeight: 700 }}>
+                $ {merchItem!.price}
+              </Typography>
+              <PayPalCheckout productId="3" price={merchItem!.price} />
+            </Box>
           </Grid>
 
           <Grid
@@ -194,7 +202,7 @@ export const MerchItemPage: React.FC = () => {
             justifyContent="center"
           >
             <Grid size={12}>
-              <Typography variant="h3">Other Merch</Typography>
+              <Typography variant="h2">Other Merch</Typography>
             </Grid>
             {MERCH_DATA.filter(
               (merch: Merch) => merch.linkName !== merchName
@@ -215,7 +223,7 @@ export const MerchItemPage: React.FC = () => {
                     width="100%"
                   />
 
-                  <Typography variant="h4">
+                  <Typography sx={{ ...theme.typography.h4 }}>
                     <Link onClick={() => navigate(`/merch/${merch.linkName}`)}>
                       {merch.name}
                     </Link>
@@ -231,7 +239,7 @@ export const MerchItemPage: React.FC = () => {
                     <Typography color="textSecondary">
                       {merch.category}
                     </Typography>
-                    <Typography variant="h5" fontWeight={700}>
+                    <Typography sx={{ ...theme.typography.h5, fontWeight: 700 }}>
                       $ {merch.price}
                     </Typography>
                   </Box>
@@ -265,7 +273,7 @@ export const MerchItemPage: React.FC = () => {
 
       <Drawer anchor="right" open={isShippingOpen} onClose={onCloseShipping}>
         <Box padding="20px">
-          <Typography variant="h4" marginBottom="15px">
+          <Typography sx={{ ...theme.typography.h4, marginBottom: "15px" }}>
             Shipping Options
           </Typography>
           {SHIPPING_DATA.map((shipping: Shipping) => (

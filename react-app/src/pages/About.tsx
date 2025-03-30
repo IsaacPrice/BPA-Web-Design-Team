@@ -14,6 +14,7 @@ import {
 import { IMAGE_PATH } from "../constants/imagePath";
 import { AutoCarousel } from "../components/AutoCarousel";
 import { isMobile } from "react-device-detect";
+import { theme } from "../theme/theme";
 
 export const About: React.FC = () => {
   const getProperPath = (imagePath: string): string => {
@@ -80,7 +81,7 @@ export const About: React.FC = () => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h5" marginBottom="15px">
+              <Typography variant="h4" sx={{ ...theme.typography.h5, marginBottom: "15px"}}>
                 Rick Notices Mattias and Isaac
               </Typography>
               <Box sx={{ width: isMobile ? "250px" : "auto" }}>
@@ -108,7 +109,7 @@ export const About: React.FC = () => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h5" marginBottom="15px">
+              <Typography variant="h4" sx={{ ...theme.typography.h5, marginBottom: "15px"}}>
                 Clark joins in
               </Typography>
               <Box sx={{ width: isMobile ? "250px" : "auto" }}>
@@ -136,7 +137,7 @@ export const About: React.FC = () => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h5" marginBottom="15px">
+              <Typography variant="h4" sx={{ ...theme.typography.h5, marginBottom: "15px"}}>
                 First Gig at The Rusty Kettle Café
               </Typography>
               <Box sx={{ width: isMobile ? "250px" : "auto" }}>
@@ -163,7 +164,7 @@ export const About: React.FC = () => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h5" marginBottom="15px">
+              <Typography variant="h4" sx={{ ...theme.typography.h5, marginBottom: "15px"}}>
                 Released First Album
               </Typography>
               <Box sx={{ width: isMobile ? "250px" : "auto" }}>
@@ -187,7 +188,7 @@ export const About: React.FC = () => {
         </Typography>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">Rick’s Dream to Perform</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Rick’s Dream to Perform</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             Rick used to perform impromptu concerts in his bedroom, using his
             shampoo bottle as a microphone, long before he knocked on Mattias
@@ -196,7 +197,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">Mattias’ Stage Fright Victory</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Mattias’ Stage Fright Victory</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             Despite being the shyest member, Mattias once refused to play a solo
             in front of a crowd, but now he’s known for his electrifying drum
@@ -205,7 +206,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">Clark’s Guitar Obsession</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Clark’s Guitar Obsession</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             Clark’s first guitar was a secondhand acoustic he bought at a pawn
             shop for $40, and he still plays it on a few of the band’s songs as
@@ -214,7 +215,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">The Band's Name Origins</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>The Band's Name Origins</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             The name Stage Fright came from Mattias’ initial fear of performing,
             but it eventually became a symbol of the band’s evolution from
@@ -223,7 +224,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">First Tour Memories</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>First Tour Memories</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             The band’s first “tour” was a two-week road trip across Indiana,
             packed into a cramped van, surviving on fast food and caffeine, with
@@ -232,7 +233,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">Isaac’s Composition Secrets</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Isaac’s Composition Secrets</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             Isaac’s favorite songwriting technique is coming up with the
             bassline first, then building the rest of the track around it.
@@ -240,7 +241,7 @@ export const About: React.FC = () => {
         </Box>
 
         <Box className="centerAligned" marginBottom="25px">
-          <Typography variant="h5">The Garage Sessions</Typography>
+          <Typography variant="h4" sx={{ ...theme.typography.h5 }}>The Garage Sessions</Typography>
           <Typography sx={{ maxWidth: "650px" }}>
             The band's earliest practice sessions were held in Mattias’ garage,
             with the windows wide open and neighbors often stopping by to join
