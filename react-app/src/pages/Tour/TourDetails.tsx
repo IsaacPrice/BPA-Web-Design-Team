@@ -88,15 +88,17 @@ export const TourDetails: React.FC = () => {
               <Grid size={{ xs: 12, md: 6 }}>
                 <Paper sx={{ padding: "15px" }}>
                   {tour.availibleTickets && (
-                    <Typography fontWeight="700" marginBottom="10px">
-                      {calculateAvailableTickets(tour)} tickets left
-                    </Typography>
+                    <>
+                      <Typography variant="h4" fontWeight={700}>
+                        $ {tour.ticketPrice}
+                      </Typography>
+                      <Typography fontWeight="700" margin="15px 0">
+                        {calculateAvailableTickets(tour)} tickets left
+                      </Typography>
+                    </>
                   )}
 
                   <Box className="centerAlignedRow" marginBottom="10px">
-                    <Typography variant="h4" fontWeight={700}>
-                      $ {tour.ticketPrice}
-                    </Typography>
                     <PayPalCheckout productId="1" price={tour.ticketPrice} />
                   </Box>
 

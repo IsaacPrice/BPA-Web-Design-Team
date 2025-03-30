@@ -76,7 +76,15 @@ export const MerchItemPage: React.FC = () => {
     <>
       {merchItem !== undefined && (
         <Grid container padding={3}>
-          <Grid size={{ xs: 12, lg: 6 }}>
+          <Grid
+            size={{ xs: 12, lg: 6 }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+            }}
+          >
             <Box className="centerAlignedRow">
               <Carousel>
                 {merchItem!.imagePaths.map((imagePath: string) => (
@@ -87,10 +95,10 @@ export const MerchItemPage: React.FC = () => {
                   />
                 ))}
               </Carousel>
-              <IconButton onClick={onOpenFullscreen}>
-                <FullscreenIcon />
-              </IconButton>
             </Box>
+            <IconButton onClick={onOpenFullscreen} sx={{ width: "40px" }}>
+              <FullscreenIcon width="80px" />
+            </IconButton>
           </Grid>
 
           <Grid size={{ xs: 12, md: 6 }}>
@@ -113,63 +121,67 @@ export const MerchItemPage: React.FC = () => {
               <Typography maxWidth="500px">{merchItem!.description}</Typography>
             </Box>
 
-            {merchItem!.sizes && (
-              <>
-                <Typography variant="h5" marginBottom="15px">
-                  Sizes
+            <Grid
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <Box>
+                <Typography variant="h4" fontWeight={700} marginBottom="25px">
+                  $ {merchItem!.price}
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    gap: "10px",
-                    flexWrap: "wrap",
-                    marginBottom: "25px",
-                  }}
-                >
-                  {merchItem!.sizes.map((size: string) => (
-                    <ToggleButton
-                      key={size}
-                      value={size}
-                      selected={selectedSize === size}
-                      onChange={onSizeChange}
-                      sx={{
-                        padding: "10px",
-                        border: "1px solid",
-                        borderColor:
-                          selectedSize === size ? "primary.main" : "grey.400",
-                        backgroundColor:
-                          selectedSize === size
-                            ? "primary.light"
-                            : "background.paper",
-                        "&:hover": {
-                          backgroundColor: "primary.light",
-                        },
-                      }}
-                    >
-                      <Typography>{size}</Typography>
-                    </ToggleButton>
-                  ))}
-                </Box>
-              </>
-            )}
+                {merchItem!.sizes && (
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                      marginBottom: "25px",
+                    }}
+                  >
+                    {merchItem!.sizes.map((size: string) => (
+                      <ToggleButton
+                        key={size}
+                        value={size}
+                        selected={selectedSize === size}
+                        onChange={onSizeChange}
+                        sx={{
+                          padding: "10px",
+                          border: "1px solid",
+                          borderColor:
+                            selectedSize === size ? "primary.main" : "grey.400",
+                          backgroundColor:
+                            selectedSize === size
+                              ? "primary.light"
+                              : "background.paper",
+                          "&:hover": {
+                            backgroundColor: "primary.light",
+                          },
+                        }}
+                      >
+                        <Typography>{size}</Typography>
+                      </ToggleButton>
+                    ))}
+                  </Box>
+                )}
+              </Box>
+            </Grid>
+            <Grid>
+              <PayPalCheckout productId="3" price={merchItem!.price} />
+            </Grid>
 
-            <Box className="centerAlignedRow" marginBottom="10px">
+            <Box className="centerAlignedRow" margin="35px 0">
               <Typography>
                 <Link onClick={onOpenShipping}>Shipping</Link>
               </Typography>
               <Typography>
                 <Link onClick={onOpenReturnPolicy}>Return Policy</Link>
               </Typography>
-            </Box>
-
-            <Box className="centerAlignedRow" marginBottom="25px">
-              <Typography variant="h4" fontWeight={700}>
-                $ {merchItem!.price}
-              </Typography>
-              <PayPalCheckout productId="3" price={merchItem!.price} />
             </Box>
           </Grid>
 
