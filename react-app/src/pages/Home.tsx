@@ -7,15 +7,19 @@ import { Merch } from "../types/Merch";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 import { TOUR_DATA } from "../constants/tourData";
 import { Tour } from "../types/Tour";
+import { theme } from "../theme/theme";
 
-const previewBoxStyle: React.CSSProperties = {
-  display: "flex",
-  flexDirection: "row",
-  gap: "15px",
-  justifyContent: "space-evenly",
-  overflowX: "auto",
-  padding: "5px",
-};
+
+const previewBoxStyle: React.CSSProperties =
+{
+    display: 'flex', 
+    flexDirection: 'row',  
+    gap: '15px', 
+    justifyContent: 'space-evenly', 
+    overflowX: 'auto',
+    padding: '5px'
+}
+
 
 export const Home: React.FC = () => {
   const navigate: NavigateFunction = useNavigate();
@@ -65,46 +69,23 @@ export const Home: React.FC = () => {
           Merch
         </Typography>
 
-        <Box sx={previewBoxStyle}>
-          {MERCH_DATA.slice(0, 5).map((merch: Merch) => (
-            <Paper
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "10px",
-                padding: "15px",
-                minWidth: "200px",
-              }}
-            >
-              <Box
-                component="img"
-                src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"}
-                alt={merch.name}
-                width="100%"
-              />
+                <Box sx={previewBoxStyle}>
+                {
+                    MERCH_DATA.slice(0, 5).map((merch: Merch) =>
+                        <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px', minWidth: '200px' }}>
+                            <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
-              <Typography variant="h4">
-                <Link onClick={() => navigate(`/merch/${merch.linkName}`)}>
-                  {merch.name}
-                </Link>
-              </Typography>
+                            <Typography variant="h3" sx={{ ...theme.typography.h4 }}><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <Typography color="textSecondary">{merch.category}</Typography>
-                <Typography variant="h5" fontWeight={700}>
-                  $ {merch.price}
-                </Typography>
-              </Box>
-            </Paper>
-          ))}
-        </Box>
-      </Grid>
+                            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                                <Typography color="textSecondary">{merch.category}</Typography>
+                                <Typography sx={{ ...theme.typography.h5 }} fontWeight={700}>$ {merch.price}</Typography>
+                            </Box>
+                        </Paper>
+                    )
+                }
+                </Box>
+            </Grid>
 
       <Grid size={12}>
         <Typography
@@ -115,34 +96,25 @@ export const Home: React.FC = () => {
           Tours
         </Typography>
 
-        <Box sx={previewBoxStyle}>
-          {TOUR_DATA.map((tour: Tour) => (
-            <Paper
-              sx={{ padding: "15px", maxWidth: "300px", minWidth: "200px" }}
-            >
-              <Box
-                component="img"
-                src={IMAGE_PATH + tour.images[0].path + "_large.jpg"}
-                alt={tour.name}
-                sx={{ width: "100%", borderRadius: "3px" }}
-              />
+                <Box sx={previewBoxStyle}>
+                {
+                    TOUR_DATA.map((tour: Tour) => (
+                        <Paper sx={{ padding: '15px', maxWidth: '300px', minWidth: '200px' }}>
+                            <Box 
+                                component="img" 
+                                src={IMAGE_PATH + tour.images[0].path + "_large.jpg"} 
+                                alt={tour.name} 
+                                sx={{ width: '100%', borderRadius: '3px' }} />
 
-              <Typography variant="h4">
-                <Link onClick={() => navigate(`/tours/${tour.linkName}`)}>
-                  {tour.name}
-                </Link>
-              </Typography>
-              <Typography variant="h5">{tour.location}</Typography>
-              <Typography variant="h5">
-                {tour.date.toLocaleDateString()}
-              </Typography>
-              <Typography variant="h5" fontWeight="700">
-                $ {tour.ticketPrice}
-              </Typography>
-            </Paper>
-          ))}
-        </Box>
-      </Grid>
-    </Grid>
-  );
-};
+                            <Typography variant="h3" sx={{ ...theme.typography.h4 }}><Link onClick={() => navigate(`/tours/${tour.linkName}`)}>{tour.name}</Link></Typography>
+                            <Typography sx={{ ...theme.typography.h5 }}>{tour.location}</Typography>
+                            <Typography sx={{ ...theme.typography.h5 }}>{tour.date.toLocaleDateString()}</Typography>
+                            <Typography sx={{ ...theme.typography.h5 }} fontWeight="700">$ {tour.ticketPrice}</Typography>
+                        </Paper>
+                    ))
+                }
+                </Box>
+            </Grid>
+        </Grid>
+    );
+}

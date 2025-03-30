@@ -4,6 +4,7 @@ import { ContactTab } from "../../types/ContactTabs";
 import Grid from '@mui/material/Grid2';
 import { BookingRequest } from "./BookingRequest";
 import { Mailto } from "../../components/Mailto";
+import { theme } from "../../theme/theme";
 
 
 type TabPanelProps =
@@ -68,17 +69,17 @@ export const Contact: React.FC = () =>
 				</TabPanel>
 
 				<TabPanel value={tab} index={ContactTab.Email}>
-					<Typography variant="h5" sx={{ paddingBottom: "10px" }}>For General Purposes:</Typography>
+					<Typography variant="h2" sx={{ ...theme.typography.h5, paddingBottom: "10px" }}>For General Purposes:</Typography>
 					<Mailto email="contact@stagefrightband.com">
 						<Typography color="textPrimary" sx={{ marginBottom: "45px" }}>contact@stagefrightband.com</Typography>
 					</Mailto>
 
-					<Typography variant="h5" sx={{ paddingBottom: "10px" }}>For Media Inqueries:</Typography>
+					<Typography variant="h2" sx={{ ...theme.typography.h5, paddingBottom: "10px" }}>For Media Inqueries:</Typography>
 					<Mailto email="media@stagefrightband.com">
 						<Typography color="textPrimary" sx={{ marginBottom: "45px" }}>media@stagefrightband.com</Typography>
 					</Mailto>
 
-					<Typography variant="h5" sx={{ paddingBottom: "10px" }}>For Booking-Related Purposes:</Typography>
+					<Typography variant="h2" sx={{ ...theme.typography.h5, paddingBottom: "10px" }}>For Booking-Related Purposes:</Typography>
 					<Mailto email="booking@stagefrightband.com">
 						<Typography color="textPrimary" sx={{ marginBottom: "45px" }}>booking@stagefrightband.com</Typography>
 					</Mailto>

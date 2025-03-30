@@ -9,6 +9,7 @@ import { ReturnPolicyDialog } from "../../components/ReturnPolicy";
 import { CreditedImage } from "../../types/CreditedImage";
 import { IMAGE_PATH } from "../../constants/imagePath";
 import PayPalCheckout from "../../components/PayPalCheckout";
+import { theme } from "../../theme/theme";
 
 export const TourDetails: React.FC = () => {
   const [tour, setTour] = useState<Tour | undefined>(undefined);
@@ -74,7 +75,7 @@ export const TourDetails: React.FC = () => {
 
               <Grid size={{ xs: 12, md: 6 }}>
                 <Paper sx={{ padding: "15px" }}>
-                  <Typography variant="h3">Details</Typography>
+                  <Typography variant="h2" sx={{ ...theme.typography.h3 }}>Details</Typography>
                   <Typography>{tour.address}</Typography>
                   <Typography>{tour.location}</Typography>
                   <Typography>{tour.date.toLocaleDateString()}</Typography>
@@ -89,10 +90,10 @@ export const TourDetails: React.FC = () => {
                 <Paper sx={{ padding: "15px" }}>
                   {tour.availibleTickets && (
                     <>
-                      <Typography variant="h4" fontWeight={700}>
+                      <Typography sx={{ ...theme.typography.h4, fontWeight: 700 }}>
                         $ {tour.ticketPrice}
                       </Typography>
-                      <Typography fontWeight="700" margin="15px 0">
+                      <Typography sx={{ fontWeight: 700, margin: "15px 0" }}>
                         {calculateAvailableTickets(tour)} tickets left
                       </Typography>
                     </>

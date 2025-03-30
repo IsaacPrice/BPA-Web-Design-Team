@@ -5,6 +5,7 @@ import { Merch } from "../../types/Merch";
 import Grid from '@mui/material/Grid2';
 import { IMAGE_PATH } from "../../constants/imagePath";
 import { NavigateFunction, useNavigate } from "react-router-dom";
+import { theme } from "../../theme/theme";
 
 
 export const MerchPage: React.FC = () => 
@@ -24,11 +25,11 @@ export const MerchPage: React.FC = () =>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
                             <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
-                            <Typography variant="h4"><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
+                            <Typography sx={{ ...theme.typography.h4 }}><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
 
                             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                                 <Typography color="textSecondary">{merch.category}</Typography>
-                                <Typography variant="h5" fontWeight={700}>$ {merch.price}</Typography>
+                                <Typography sx={{ ...theme.typography.h5, fontWeight: 700 }}>$ {merch.price}</Typography>
                             </Box>
 
                             {
