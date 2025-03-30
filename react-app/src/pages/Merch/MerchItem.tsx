@@ -184,13 +184,6 @@ export const MerchItemPage: React.FC = () => {
                 <Link onClick={onOpenReturnPolicy}>Return Policy</Link>
               </Typography>
             </Box>
-
-            <Box className="centerAlignedRow" marginBottom="25px">
-              <Typography sx={{ ...theme.typography.h4, fontWeight: 700 }}>
-                $ {merchItem!.price}
-              </Typography>
-              <PayPalCheckout productId="3" price={merchItem!.price} />
-            </Box>
           </Grid>
 
           <Grid
