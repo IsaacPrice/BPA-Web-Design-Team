@@ -54,7 +54,8 @@ export const Home: React.FC = () => {
         <Button
           href="https://open.spotify.com/album/1xpGyKyV26uPstk1Elgp9Q"
           target="_blank"
-        >
+          sx={{ textShadow: "1px 1px 10px black" }}
+          >
           Listen Now
         </Button>
       </Grid>

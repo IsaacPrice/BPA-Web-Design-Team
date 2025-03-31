@@ -3,11 +3,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { BandMember } from "../types/BandMember";
 import { BAND_MEMBER_DATA } from "../constants/bandMemberData";
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot,
   TimelineItem,
   TimelineSeparator,
 } from "@mui/lab";
@@ -59,9 +55,9 @@ export const About: React.FC = () => {
             <Typography variant="h3" color="textPrimary">
               {member.role}
             </Typography>
-            <Typography variant="body1" color="textPrimary">
-              {member.bio}
-            </Typography>
+            <Typography variant="body1"> 
+              {member.bio} 
+            </Typography> 
           </Paper>
         </Grid>
       ))}
