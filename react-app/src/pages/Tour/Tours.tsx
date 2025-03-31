@@ -29,7 +29,11 @@ export const Tours: React.FC = () =>
                                 alt={tour.name} 
                                 sx={{ width: '100%', borderRadius: '3px' }} />
 
-                            <Typography sx={{ ...theme.typography.h4 }}><Link onClick={() => navigate(`/tours/${tour.linkName}`)}>{tour.name}</Link></Typography>
+                            <Typography sx={{ ...theme.typography.h4 }}>
+                                <Link onClick={() => navigate(`/tours/${tour.linkName}`)} role="button">
+                                    {tour.name}
+                                </Link>
+                            </Typography>
                             <Typography sx={{ ...theme.typography.h5 }}>{tour.location}</Typography>
                             <Typography sx={{ ...theme.typography.h5 }}>{tour.date.toLocaleDateString()}</Typography>
                             <Typography sx={{ ...theme.typography.h5 }} fontWeight="700">$ {tour.ticketPrice}</Typography>

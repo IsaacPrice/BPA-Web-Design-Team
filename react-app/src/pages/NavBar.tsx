@@ -25,6 +25,7 @@ export const NavBar: React.FC =() =>
                 <Link 
                     onClick={() => navigate('/')} 
                     color="#fff" 
+                    role="button"
                     sx={{ 
                         fontWeight: '700', 
                         fontSize: "1.5rem", 

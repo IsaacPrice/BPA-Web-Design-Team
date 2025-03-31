@@ -59,7 +59,7 @@ export const TourDetails: React.FC = () => {
                     sx={{ width: "100%", borderRadius: "3px" }}
                   />
 
-                  <Link fontSize=".66rem" href={image.link}>
+                  <Link fontSize=".66rem" href={image.link} role="button">
                     {image.creditText}
                   </Link>
                 </Box>
@@ -90,7 +90,7 @@ export const TourDetails: React.FC = () => {
                 <Paper sx={{ padding: "15px" }}>
                   {tour.availibleTickets && (
                     <>
-                      <Typography sx={{ ...theme.typography.h4, fontWeight: 700 }}>
+                      <Typography sx={{ ...theme.typography.h4, fontWeight: 700 }} role="heading">
                         $ {tour.ticketPrice}
                       </Typography>
                       <Typography sx={{ fontWeight: 700, margin: "15px 0" }}>
@@ -104,7 +104,7 @@ export const TourDetails: React.FC = () => {
                   </Box>
 
                   <Typography>
-                    <Link onClick={onOpenReturnPolicy}>Return Policy</Link>
+                    <Link onClick={onOpenReturnPolicy} role="button">Return Policy</Link>
                   </Typography>
                 </Paper>
               </Grid>

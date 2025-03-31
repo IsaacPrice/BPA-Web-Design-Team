@@ -130,7 +130,7 @@ export const MerchItemPage: React.FC = () => {
               }}
             >
               <Box>
-                <Typography sx={{ ...theme.typography.h4, fontWeight: 700, marginBottom: "25px" }}>
+                <Typography sx={{ ...theme.typography.h4, fontWeight: 700, marginBottom: "25px" }} role="heading">
                   $ {merchItem!.price}
                 </Typography>
                 {merchItem!.sizes && (
@@ -178,10 +178,10 @@ export const MerchItemPage: React.FC = () => {
 
             <Box className="centerAlignedRow" margin="35px 0">
               <Typography>
-                <Link onClick={onOpenShipping}>Shipping</Link>
+                <Link onClick={onOpenShipping} role="button">Shipping</Link>
               </Typography>
               <Typography>
-                <Link onClick={onOpenReturnPolicy}>Return Policy</Link>
+                <Link onClick={onOpenReturnPolicy} role="button">Return Policy</Link>
               </Typography>
             </Box>
           </Grid>
@@ -217,7 +217,7 @@ export const MerchItemPage: React.FC = () => {
                   />
 
                   <Typography sx={{ ...theme.typography.h4 }}>
-                    <Link onClick={() => navigate(`/merch/${merch.linkName}`)}>
+                    <Link onClick={() => navigate(`/merch/${merch.linkName}`)} role="button">
                       {merch.name}
                     </Link>
                   </Typography>
@@ -232,7 +232,7 @@ export const MerchItemPage: React.FC = () => {
                     <Typography color="textSecondary">
                       {merch.category}
                     </Typography>
-                    <Typography sx={{ ...theme.typography.h5, fontWeight: 700 }}>
+                    <Typography sx={{ ...theme.typography.h5, fontWeight: 700 }} role="heading">
                       $ {merch.price}
                     </Typography>
                   </Box>

@@ -25,7 +25,11 @@ export const MerchPage: React.FC = () =>
                         <Paper sx={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '15px' }}>
                             <Box component="img" src={IMAGE_PATH + merch.imagePaths[0] + "_small.jpg"} alt={merch.name} width="100%" />
 
-                            <Typography sx={{ ...theme.typography.h4 }}><Link onClick={() => navigate(`/merch/${merch.linkName}`)}>{merch.name}</Link></Typography>
+                            <Typography sx={{ ...theme.typography.h4 }}>
+                                <Link onClick={() => navigate(`/merch/${merch.linkName}`)} role="button">
+                                    {merch.name}
+                                </Link>
+                            </Typography>
 
                             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                                 <Typography color="textSecondary">{merch.category}</Typography>
