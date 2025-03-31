@@ -84,7 +84,7 @@ export const About: React.FC = () => {
                 <Typography>
                   One fateful day, Rick, aspiring to lead a band, found himself
                   walking in silence after his earbuds died. But that silence
-                  led him to a garage resonating with drumsand bass. Intrigued,
+                  led him to a garage resonating with drums and bass. Intrigued,
                   he followed the sound and knocked on the door, where Mattias
                   and Isaac were jamming out. That knock marked the start of
                   their journey as a band, uniting Rick’s vision with Mattias’

@@ -19,7 +19,7 @@ export const BAND_MEMBER_DATA: BandMember[] =
     },
     {
         name: 'Clark Meridew',
-        role: 'Guiarist',
+        role: 'Guitarist',
         age: 18,
         images: ['ClarkMeridew/1', 'ClarkMeridew/2', 'ClarkMeridew/3', 'ClarkMeridew/4'],
         bio: "A six-string master who overcame life’s challenges to shred his way to the top. Clark’s riffs electrify the band’s sound."

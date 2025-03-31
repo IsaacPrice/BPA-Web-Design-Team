@@ -39,7 +39,7 @@ export const Footer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                         <Typography>© 2024 Stage Fright. All Rights Reserved.</Typography>
                         <Typography>This website is provided as-is. The content is free to use, and the site owner holds no liability for its usage.</Typography>
                         <Typography>This site does not collect or store personal data.</Typography>
-                        <Typography>contact@stagefrightband.com</Typography>
+                        <Typography>contact@stagefrightband.us</Typography>
                         <Typography>(574) 377-2752</Typography>
                     </Grid>
                 </Grid>

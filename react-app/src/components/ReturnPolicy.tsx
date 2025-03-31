@@ -26,11 +26,11 @@ export const ReturnPolicyDialog: React.FC<ReturnPolicyDialogProps> = (props: Ret
                 </Typography>
                 <Typography textAlign="left" variant="h6" gutterBottom sx={{ mt: 2 }}>How to Request a Return</Typography>
                 <Typography textAlign="left" variant="body1">
-                    - Contact us at support@stagefrightband.com with your order number and reason for return. <br />
+                    - Contact us at support@stagefrightband.us with your order number and reason for return. <br />
                     - Buyers are responsible for return shipping costs unless the item is defective or incorrect.
                 </Typography>
                 <Typography textAlign="left" variant="body2" sx={{ mt: 2 }}>
-                    If you have any questions, reach out to us at support@stagefrightband.com. Thank you for supporting Stage-Fright!
+                    If you have any questions, reach out to us at support@stagefrightband.us. Thank you for supporting Stage-Fright!
                 </Typography>
             </DialogContent>
         </Dialog>
