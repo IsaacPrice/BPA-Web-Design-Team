@@ -20,7 +20,7 @@ export const NavBar: React.FC =() =>
 
             <Link 
                 onClick={() => navigate('/')} 
-                color="textPrimary" 
+                color="#fff" 
                 sx={{ 
                     fontWeight: '700', 
                     fontSize: "1.5rem", 
@@ -30,11 +30,11 @@ export const NavBar: React.FC =() =>
                         Stage Fright
             </Link>
 
-            <ButtonGroup variant="text" color="inherit">
-                <Button onClick={() => navigate('/about')}>About</Button>
-                <Button onClick={() => navigate('/tours')}>Tours</Button>
-                <Button onClick={() => navigate('/merch')}>Merch</Button>
-                <Button onClick={() => navigate('/contact')}>Contact</Button>
+            <ButtonGroup variant="text" color="inherit" >
+                <Button onClick={() => navigate('/about')} sx={{ textShadow: "1px 1px 10px black"}}>About</Button>
+                <Button onClick={() => navigate('/tours')} sx={{ textShadow: "1px 1px 10px black"}}>Tours</Button>
+                <Button onClick={() => navigate('/merch')} sx={{ textShadow: "1px 1px 10px black"}}>Merch</Button>
+                <Button onClick={() => navigate('/contact')} sx={{ textShadow: "1px 1px 10px black"}} >Contact</Button>
             </ButtonGroup>
         </AppBar>
     )
