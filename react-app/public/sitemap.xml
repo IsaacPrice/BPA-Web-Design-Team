@@ -11,7 +11,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stagefrightband.us/tour/:tourName</loc>
+    <loc>https://stagefrightband.us/tours/:tourName</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

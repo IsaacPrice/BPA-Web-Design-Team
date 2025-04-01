@@ -22,11 +22,11 @@ function App()
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/tours" element={<Tours />} />
+                        <Route path="/tours/:tourName" element={<TourDetails />} />
                         <Route path="/merch" element={<MerchPage />} />
+                        <Route path="/merch/:merchName" element={<MerchItemPage />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/about" element={<About />} />
-                        <Route path="/merch/:merchName" element={<MerchItemPage />} />
-                        <Route path="/tour/:tourName" element={<TourDetails />} />
                     </Routes>
 				</Footer>
 			</BrowserRouter>

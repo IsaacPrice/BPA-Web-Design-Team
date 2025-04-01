@@ -185,7 +185,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Rick’s Dream to Perform</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             Rick used to perform impromptu concerts in his bedroom, using his
             shampoo bottle as a microphone, long before he knocked on Mattias
             and Isaac’s garage door.
@@ -194,7 +194,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Mattias’ Stage Fright Victory</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             Despite being the shyest member, Mattias once refused to play a solo
             in front of a crowd, but now he’s known for his electrifying drum
             solos that get the crowd roaring.
@@ -203,7 +203,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Clark’s Guitar Obsession</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             Clark’s first guitar was a secondhand acoustic he bought at a pawn
             shop for $40, and he still plays it on a few of the band’s songs as
             a tribute to where it all started.
@@ -212,7 +212,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>The Band's Name Origins</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             The name Stage Fright came from Mattias’ initial fear of performing,
             but it eventually became a symbol of the band’s evolution from
             nervous newcomers to confident performers.
@@ -221,7 +221,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>First Tour Memories</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             The band’s first “tour” was a two-week road trip across Indiana,
             packed into a cramped van, surviving on fast food and caffeine, with
             zero hotel bookings—just a handful of friends and a dream.
@@ -230,7 +230,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>Isaac’s Composition Secrets</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             Isaac’s favorite songwriting technique is coming up with the
             bassline first, then building the rest of the track around it.
           </Typography>
@@ -238,7 +238,7 @@ export const About: React.FC = () => {
 
         <Box className="centerAligned" marginBottom="25px">
           <Typography variant="h4" sx={{ ...theme.typography.h5 }}>The Garage Sessions</Typography>
-          <Typography sx={{ maxWidth: "650px" }}>
+          <Typography sx={{ maxWidth: "650px", textAlign: "center" }}>
             The band's earliest practice sessions were held in Mattias’ garage,
             with the windows wide open and neighbors often stopping by to join
             in or catch a few songs.

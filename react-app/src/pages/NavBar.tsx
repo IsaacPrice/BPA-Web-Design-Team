@@ -30,7 +30,8 @@ export const NavBar: React.FC =() =>
                         fontWeight: '700', 
                         fontSize: "1.5rem", 
                         textDecoration: 'none', 
-                        cursor: "pointer" 
+                        cursor: "pointer", 
+                        fontFamily: 'Century Gothic, sans-serif !important',
                         }}>
                             Stage Fright
                 </Link>
@@ -44,10 +45,10 @@ export const NavBar: React.FC =() =>
                     </IconButton>
                 : 
                     <ButtonGroup variant="text" color="inherit" >
-                        <Button onClick={() => navigate('/about')} sx={{ textShadow: "1px 1px 10px black"}}>About</Button>
-                        <Button onClick={() => navigate('/tours')} sx={{ textShadow: "1px 1px 10px black"}}>Tours</Button>
-                        <Button onClick={() => navigate('/merch')} sx={{ textShadow: "1px 1px 10px black"}}>Merch</Button>
-                        <Button onClick={() => navigate('/contact')} sx={{ textShadow: "1px 1px 10px black"}} >Contact</Button>
+                        <Button onClick={() => navigate('/about')} sx={{ textShadow: "1px 1px 10px black", fontWeight: "600" }}>About</Button>
+                        <Button onClick={() => navigate('/tours')} sx={{ textShadow: "1px 1px 10px black", fontWeight: "600" }}>Tours</Button>
+                        <Button onClick={() => navigate('/merch')} sx={{ textShadow: "1px 1px 10px black", fontWeight: "600" }}>Merch</Button>
+                        <Button onClick={() => navigate('/contact')} sx={{ textShadow: "1px 1px 10px black", fontWeight: "600" }} >Contact</Button>
                     </ButtonGroup>
                 }
             </Box>

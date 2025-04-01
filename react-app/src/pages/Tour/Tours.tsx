@@ -27,7 +27,14 @@ export const Tours: React.FC = () =>
                                 component="img" 
                                 src={IMAGE_PATH + tour.images[0].path + "_small.jpg"} 
                                 alt={tour.name} 
-                                sx={{ width: '100%', borderRadius: '3px' }} />
+                                sx={{ 
+                                    width: '100%', 
+                                    height: '250px',
+                                    objectFit: 'cover',
+                                    borderRadius: '3px',
+                                    backgroundColor: 'rgba(0, 0, 0, 0.1)' 
+                                }} 
+                            />
 
                             <Typography sx={{ ...theme.typography.h4 }}>
                                 <Link onClick={() => navigate(`/tours/${tour.linkName}`)} role="button">

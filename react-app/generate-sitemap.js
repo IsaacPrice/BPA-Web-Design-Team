@@ -4,7 +4,7 @@ const path = require('path');
 const routes = [
   '/',
   '/tours',
-  '/tour/:tourName',
+  '/tours/:tourName',
   '/merch',
   '/merch/:merchName',
   '/contact',

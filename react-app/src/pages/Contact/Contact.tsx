@@ -57,7 +57,7 @@ export const Contact: React.FC = () =>
 
 			<Grid size={12} className="centerAligned">
 				<Grid size={12} className="centerAligned">
-					<Tabs value={tab} onChange={onTabChange} aria-label="contact tabs">
+					<Tabs value={tab} onChange={onTabChange} aria-label="contact tabs" className="centerAligned">
 						<Tab label="Booking" />
 						<Tab label="Email" />
 						<Tab label="Customer Service" />
@@ -86,9 +86,9 @@ export const Contact: React.FC = () =>
 				</TabPanel>
 
 				<TabPanel value={tab} index={ContactTab.CustomerService}>
-					<Typography variant="body1" sx={{ maxWidth: '500px', marginBottom: '15px' }}>If you are having any problems with the website, ticket or merch perchasing, or anything else, feel free to reach out to use at</Typography>
+					<Typography variant="body1" sx={{ maxWidth: '500px', marginBottom: '15px', textAlign: "center !important" }}>If you are having any problems with the website, ticket or merch perchasing, or anything else, feel free to reach out to use at</Typography>
 					<Typography variant="body1">support@stagefrightband.us</Typography>
-					<Typography variant="body1" sx={{ maxWidth: '500px', marginTop: '15px' }}>We will get back to you within at least 2 business days.</Typography>
+					<Typography variant="body1" sx={{ maxWidth: '500px', marginTop: '15px', textAlign: "center !important" }}>We will get back to you within at least 2 business days.</Typography>
 				</TabPanel>
 			</Grid>
 		</Grid>
