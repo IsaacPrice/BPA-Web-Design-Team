@@ -1,5 +1,5 @@
 /*!
- * react-paypal-js v8.7.0 (2024-09-16T17:52:54.237Z)
+ * react-paypal-js v8.8.2 (2025-02-06T19:12:00.138Z)
  * Copyright 2020-present, PayPal, Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,9 +27,9 @@
 
 /**
  * @license React
- * react-is.production.min.js
+ * react-is.production.js
  *
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -66,7 +66,7 @@
  */
 
 /**
- * @mui/styled-engine v6.1.10
+ * @mui/styled-engine v6.4.9
  *
  * @license MIT
  * This source code is licensed under the MIT license found in the
