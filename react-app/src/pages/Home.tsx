@@ -54,6 +54,7 @@ export const Home: React.FC = () => {
         <Button
           href="https://open.spotify.com/album/1xpGyKyV26uPstk1Elgp9Q"
           target="_blank"
+          aria-label="Listen Now (opens in a new tab)"
           sx={{ textShadow: "1px 1px 10px black" }}
           >
           Listen Now
