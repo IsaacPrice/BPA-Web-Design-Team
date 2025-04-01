@@ -11,7 +11,7 @@ const routes = [
   '/about',
 ];
 
-const baseUrl = 'https://yourwebsite.com'; 
+const baseUrl = 'https://stagefrightband.us'; 
 
 function generateSitemapXml(routes, baseUrl) {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
